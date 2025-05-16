@@ -1,0 +1,22 @@
+---
+title: fAQ
+layout: layout.njk
+---
+
+        <link rel="stylesheet" href="/styles/faq.css">
+        <script>
+            window.Faq = {{ collections.faqcol | safe }};
+        </script>
+<section class="hero-section">
+    <div class="prev">
+    	<h1>Často kladené otázky (FAQ)</h1>
+    </div>
+    <div class="content">
+        {% for faq in collections.faqcol %}
+        <details class="faq-item">
+            <summary class="faq-question">{{ faq.data.h1 }}</summary>
+            <p class="faq-answer">{{ faq.data.h2 }}</p>
+        </details>
+        {% endfor %}
+    </div>
+</section>

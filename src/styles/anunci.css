@@ -1,0 +1,475 @@
+/* Общие стили */
+.property-page {
+    font-family: 'Lunasima', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Карусель изображений */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red; /* тёмный фон как в Figma */
+}
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  object-position: center;
+  display: none;
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    color: #012F8D;
+    border: none;
+    font-size: 1.875rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn svg {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(1525%) hue-rotate(180deg) brightness(94%) contrast(84%);
+    transition: transform 0.3s ease;
+}
+
+.carousel-btn svg:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(21%) sepia(76%) saturate(3971%) hue-rotate(202deg) brightness(95%) contrast(97%);
+}
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+/* Синий блок */
+.blue-block {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    background-color: #012F8D;
+    color: white;
+    padding: 20px;
+    height: 20vh; /* Высота блока */
+}
+
+.blue-block-content {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 80%; /* Ширина контента */
+    margin: 0 auto; /* Центрируем по горизонтали */
+}
+
+.return {
+    gap: 30px;
+    display: flex;
+}
+
+.back-button {
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.back-button svg {
+    transition: transform 0.3s ease;
+}
+
+.back-button svg:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.price {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    gap: 15px;
+    font-size: 0.875rem;
+}
+
+.details img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Кнопка "Связаться" */
+.cta {
+    display: flex;
+    align-items: center; /* ← центрирует по вертикали */
+    gap: 30px; /* ← расстояние между кнопкой и иконкой */
+    justify-content: center; /* ← по центру по горизонтали */
+    margin: 20px 0;
+}
+
+
+.glass-button {
+    padding: 10px 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.03);
+}
+
+
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    filter: brightness(0) saturate(100%) invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(94%) saturate(521%) hue-rotate(75deg) brightness(97%) contrast(102%);
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+    /*section-info*/
+
+.section-info {
+    width: 70%;
+    margin: 0 auto; /* Центрируем блок */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16vh;
+}
+
+.info-prev {
+    font-weight: bold;
+    color: #565656;
+    font-size: 1.375rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid #A9A9A9;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.details1 {
+    display: none;
+}
+
+
+.sec-info1 {
+    font-size: 1rem;
+    color: #565656;
+    border-bottom: 4px solid #A9A9A9;
+    padding: 10vh 0;
+}
+
+.sec-info2 {
+    padding: 10vh 0;
+    color: #565656;
+}
+
+.sec-info2 h1 {
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+    /*section-offer*/
+
+.section-offer {
+    width: 100%;
+    border-top: 4px solid #416ECB;
+    padding: 5vh 0;
+}
+
+.random-offer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.random-offer h1 {
+    font-size: 2rem;
+    color: #012F8D;
+    margin-bottom: 10px;
+}
+
+.random-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Карточка */
+.bottom-block {
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Изображение */
+.carousel-container2 {
+    width: 100%;
+    height: 32vh;
+    overflow: hidden;
+}
+
+.carousel-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Остальной контент */
+.info-block1 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 15px 15px 0;
+    display: block;
+}
+
+.price2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 15px 0;
+}
+
+.euro,
+.rif {
+    text-decoration: none;
+    color: #29A3E2;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.rif {
+    margin-left: auto;
+}
+.euro1 {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.cta2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.glass-button2 {
+    background-color: #416ECB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.glass-button2:hover {
+    background-color: #012F8D;
+}
+
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+
+  .carousel-image {
+    max-height: 50vh;
+    object-fit: cover;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+ .blue-block {
+  background-color: #0047AB; /* Пример: насыщенный синий */
+  color: white;
+  padding: 30px 20px;
+  height: 30vh;
+  text-align: center;
+}
+
+.blue-block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.return {
+  display: flex;
+  flex-direction: row; /* вот оно, сука */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.back-button {
+  flex-shrink: 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-align: left;
+}
+
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row; /* чтобы иконка и кнопка были в строку */
+  margin-top: 10px;
+}
+
+.glass-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact img {
+  width: 30px;
+  height: 30px;
+}
+
+  /* Блок после синего */
+  .section-info {
+    width: 90%;
+    margin: 0 auto 8vh auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  .info-prev {
+    font-size: 1.25rem;
+    text-align: center;
+    border-bottom: 3px solid #A9A9A9;
+  }
+
+  .details1 {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    gap: 12px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
+
+  .details1 span img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sec-info1 {
+    font-size: 0.9375rem;
+    text-align: justify;
+    padding: 6vh 0;
+  }
+
+  .sec-info2 {
+    padding: 6vh 0;
+    text-align: justify;
+  }
+
+  .sec-info2 h1 {
+    font-size: 1.25rem;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+.bottom-block {
+    width: calc(100%);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+}

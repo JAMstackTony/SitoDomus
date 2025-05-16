@@ -1,0 +1,142 @@
+---
+title: Home
+layout: layout.njk
+pagination:
+    data: collections.announcements
+    size: 6
+    alias: pageAnnouncements
+---
+        <link rel="stylesheet" href="/styles/home.css">
+        <script>
+            window.Announcements = {{ collections.announcements | safe }};
+        </script>
+        <script>
+            window.Regione = {{ collections.regione | safe }};
+        </script>
+
+<section id="home">
+      <div class="hero-section">
+         <div class="hero-left">
+            <div class="hero-info">
+              <h1>Nemovitost</h1>
+               <h2>V bezkonkurenční oblasti<a href="#huck"> Itálie</a></h2>
+             <div class="hero-h3">
+                <h3><a href="#">Plná podpora</a></h3>  
+                <h3><a href="#">Pouze ověřené nemovitosti</a></h3>
+                <h3><a href="#">Nejlepší regiony Itálie</a></h3>
+                <h3><a href="#">Více než <span class="highlight"> 900 </span>úspěšných transakcí</a></h3>
+             </div>
+           </div>
+         </div>
+               <div class="hero-but">
+                <div class="hero-but1"><a href="/property"><span class="but1_des">Galerie dostupných objektů</span><span class="but1_mob">Dostupných objektů</span></a></div>
+                <div class="hero-but2"><a href="#huck">NEMOVITOSTI</a></div>
+               </div>
+      </div>
+
+          <div class="section1">
+              <div class="section2">
+                  <h1>O Itálii</h1>
+                  <h2>Proč je Itálie stabilní volbou pro investice do nemovitostí? Itálie není jen zemí umění, vína a moře. Je to také stát s hluboce zakořeněnou tradicí vlastnictví a podnikání.</h2>
+              </div>
+          </div>
+            <div class="section3">
+      <div class="sec3-info">
+        <div class="serv-info">
+            <div class="serv-text">
+                Více o městě
+            </div>  
+          <div class="serv-block">
+        {% set count = 0 %}
+        {% for service in collections.services %}
+        {% if count < 2 %}
+        <div class="serv-block-1">
+            <!-- Заголовок и описание -->
+            <p class="serv-h1">{{ service.data.text }}</p>
+            <p class="serv-h2">{{ service.data.text2 }}</p>
+        </div>
+            {% set count = count + 1 %}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+            </div>   
+
+<div class="section-anunci">
+    {% set count = 0 %}
+    {% for announcement in pageAnnouncements %}
+        <div class="bottom-block {% if count >= 3 %}mobile-hide{% endif %} {% if count >= 6 %}desktop-hide{% endif %}"
+             data-id="{{ announcement.data.riferimento }}"
+             data-riferimento="{{ announcement.data.riferimento }}"
+             data-city="{{ announcement.data.city1 }}"
+             data-zona="{{ announcement.data.nomeZona }}"
+             data-tipo="{{ announcement.data.tipo }}">
+            
+            <!-- Карусель -->
+            <div class="carousel-container">
+{% for image in announcement.data.images %}
+  <img src="/{{ image.src | urlencode }}"
+       alt="{{ image.alt or 'Property Image' }}"
+       class="carousel-image {% if loop.index0 == 0 %}active{% endif %}">
+{% endfor %}
+
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+
+            <!-- Информация об объекте -->
+            <a class="info-block1" href="/anunci/{{ announcement.fileSlug }}/">
+                <div class="info-anunci">{{ announcement.data.nomeAnunci }}</div>
+            </a>
+
+            <div class="price">
+                <a class="euro" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzo }} </a>
+                <a class="euro1" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzosconto }}</a>
+                <a class="rif" href="/anunci/{{ announcement.fileSlug }}/">RIF {{ announcement.data.riferimento }}</a>
+            </div>
+
+            <div class="details">
+                <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">{{ announcement.data.zonam2 }}</span>
+                <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">{{ announcement.data.rooms }}</span>
+                <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">{{ announcement.data.elevator }}</span>
+                <span><img src="/Foto/Icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
+                <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">{{ announcement.data.bagni }}</span>
+                <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">{{ announcement.data.floor }}</span>
+            </div>
+
+            <div class="cta">
+                <a href="/anunci/{{ announcement.fileSlug }}/" class="glass-link">
+                    <button class="glass-button" id="contatButton">Zobrazit inzerát</button>
+                </a>
+            </div>
+        </div>
+        {% set count = count + 1 %}
+    {% endfor %}
+</div>
+
+
+<div class="section4">
+    <h1>Podívat se na další města</h1>
+    <div class="block-city" id="huck">
+        {% for region in collections.regione %}
+        <div class="city" style="background-image: url('{{ region.data.images }}');">
+            <div class="city-container">
+                <h2>{{ region.data.h1 }}</h2>
+                <h3>{{ region.data.h2 }}</h3>
+                <div class="city-but">
+                    <a href="/region/{{ region.fileSlug }}">Vybrat nemovitost</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="carousel-dots"></div>
+    
+</div>
+     
+
+          
+</section>
+<script src="/script/home.js"></script>

@@ -1,0 +1,91 @@
+
+.hero-section {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center; /* Добавляем выравнивание по центру */
+}
+
+.prev {
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+    text-align: center; /* Выравнивание текста по центру */
+    width: 30%; /* Занимает всю ширину */
+    display: flex; /* Используем flexbox для центрирования */
+    flex-direction: column; /* Элементы идут сверху вниз */
+    align-items: center; /* Выравниваем содержимое по центру */
+}
+
+.prev h1 {
+	font-size: 2.1875rem;
+	color: #012F8D;
+    text-align: center; /* Выравнивание текста по центру */
+    width: auto; /* Убираем фиксированную ширину */
+}
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между блоками */
+    margin-bottom: 40vh;
+}
+
+.faq-item {
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    color: #565656;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    list-style: none;
+    position: relative; /* Для позиционирования стрелки */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: "›"; /* Похоже на '>' но смотрит вниз */
+    font-size: 2.5rem;
+    transform: rotate(90deg); /* Делаем стрелку вниз */
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-question {
+    color: #FFF;
+    background-color: #355bb5;
+}
+
+.faq-item[open] .faq-question::after {
+    content: "✖"; /* Крестик */
+    transform: rotate(180deg);
+    font-size: 1.5rem;
+}
+
+.faq-answer {
+    padding: 20px;
+    background-color: #355bb5;
+    color: #FFF;
+    font-size: 1rem;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+
+    .prev h1 {
+        font-size: 1.875rem;
+        color: #012F8D;
+        text-align: center; /* Выравнивание текста по центру */
+        width: auto; 
+    }
+
+    .prev {
+        width: 80%;
+    }
+}

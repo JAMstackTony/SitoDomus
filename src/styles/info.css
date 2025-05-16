@@ -1,0 +1,194 @@
+    .hero-section {
+        background-position: center;
+        background-size: cover;
+        height: 130vh;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-start; /* Начальное выравнивание слева */
+        position: relative; /* Для управления дочерними элементами */
+        background-image: url(/foto/info.png);
+        flex-direction: column;
+        overflow: hidden; /* Обрезаем всё, что выходит за пределы блока */
+    	border-bottom: 10px solid #012F8D;
+        width: 100%;     
+    }
+
+    .hero-section::before {
+        content: ""; /* Обязательно для псевдоэлемента */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Занимает левую половину блока */
+        height: 100%; /* Полная высота блока */
+        background-color: rgba(0, 0, 0, 0.3); /* Чёрный цвет с прозрачностью 50% */
+        z-index: 1; /* Размещаем затемнение поверх фона */
+    }	
+    .block-left {
+    	margin-left: 16vh;
+    	margin-top: 11.2vh;
+    	z-index: 2;
+    }
+
+    .left-info h1 {
+    	color: #FFF;
+    	margin-bottom: 3.2vh;
+    	font-size: 1.875rem;
+    } 
+    .left-info p {
+    	font-size: 0.875rem;
+    	width: 30%;
+    	color: #FFF;
+    	margin-bottom: 1.6vh;
+    } 
+
+    .left-cont img {
+    	width: 20px;
+    	height: 20px;
+    	filter: brightness(0) saturate(100%) invert(21%) sepia(76%) saturate(3971%) hue-rotate(202deg) brightness(95%) contrast(97%);
+    }    
+    .contact {
+    	margin-bottom: 2.4vh;
+    	display: flex; /* Выравниваем элементы по горизонтали */
+        align-items: center; /* Выравниваем элементы по вертикали */
+        gap: 10px; /* Расстояние между иконкой и текстом */
+    }
+    .left-cont h1 {
+    	color: #FFF;
+    	margin-top: 11.2vh;
+    	margin-bottom: 3.2vh;
+    	font-size: 1.875rem;
+    }       
+    .left-cont a {
+    	color: #FFF;
+    	text-decoration: none;
+    }       
+
+    .section2 {
+    	height: 80vh;
+    	flex-direction: row;
+    	display: flex;
+    }       
+    .sec2-foto {
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/foto/italy.webp);
+        overflow: hidden; /* Обрезаем всё, что выходит за пределы блока */
+        width: 50%;
+        height: 80vh;
+    }       
+    .sec2-form {
+    	display: flex;
+    	flex-direction: column;
+    	margin: 0 auto; /* Центрируем форму по горизонтали */
+    }
+
+    .sec2-form h2 {
+	    margin-top: 12.8vh;
+        text-align: center; /* Центрируем заголовок */
+        font-size: 1.5rem;
+        margin-bottom: 3.2vh; /* Отступ снизу */
+        color: #012F8D; /* Цвет текста */
+    }
+
+    .sec2-form form {
+        display: flex;
+        flex-direction: column; /* Элементы формы идут сверху вниз */
+        gap: 15px; /* Расстояние между элементами */
+    }
+
+    .sec2-form label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333; /* Цвет текста */
+        margin-bottom: 5px; /* Отступ между текстом и полем */
+    }
+
+    .sec2-form input,
+    .sec2-form textarea {
+        width: 100%; /* Полная ширина */
+        padding: 10px; /* Внутренние отступы */
+        font-size: 1rem;
+        border: none; /* Убираем стандартную рамку */
+        border-bottom: 2px solid #012F8D; /* Линия под полем */
+        background-color: transparent; /* Прозрачный фон */
+        outline: none; /* Убираем обводку при фокусе */
+    }
+
+    .sec2-form textarea {
+        resize: none; /* Запрещаем изменять размер текстового поля */
+        height: 100px; /* Фиксированная высота */
+    }
+
+    .sec2-form button {
+        margin-top: 3.2vh; /* Отступ сверху */
+        padding: 10px;
+        font-size: 1.125rem;
+        color: white;
+        background-color: #012F8D; /* Цвет кнопки */
+        border: none;
+        border-radius: 3px; /* Закругление углов */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Анимация при наведении */
+    }
+
+    .sec2-form button:hover {
+        background-color: #0056b3; /* Темнее при наведении */
+    }     
+
+@media screen and (max-width: 768px) {
+
+
+    .block-left {
+        justify-content: center;
+        align-items: center;
+        margin: 6vh auto 0 auto;
+    }
+
+    .left-info {
+        width: 80%;
+        margin: 8vh auto 0 auto;
+    }
+
+    .left-info p {
+        font-size: 0.875rem;
+        width: 100%;
+        color: #FFF;
+        margin-bottom: 1.6vh;
+    }
+
+    .left-cont {
+        background-color: #2B3641;
+        height: 40vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .left-cont h1 {
+        padding: 6vh 0px 3.2vh 0px;
+        color: #FFF;
+        font-size: 1.875rem;
+    }
+
+    .contact {
+        width: 70%;
+        margin: 2.5vh auto 0 auto;
+    }
+
+
+    .sec2-foto {
+        display: none;
+    }
+
+    .sec2-form h2 {
+        font-size: 1.75rem;
+    }
+
+    .sec2-form button {
+        margin-top: 3.2vh; /* Отступ сверху */
+        padding: 20px 40px;
+        font-size: 1.375rem;
+    }
+
+}

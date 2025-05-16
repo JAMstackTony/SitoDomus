@@ -1,0 +1,200 @@
+.hero-section {
+    width: 100%;
+}
+
+.section-up {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regione-block {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Задаем минимальную высоту во весь экран */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.regione-block::before {
+    content: ""; /* Обязательно для псевдоэлемента */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Чёрный цвет с прозрачностью 50% */
+    z-index: 1; /* Размещаем затемнение поверх фона */
+}
+
+.regione-content {
+    z-index: 2;
+    text-align: center; /* Выравнивание текста по центру */ /* Поднимаем текст над фоном */
+    color: white; /* Цвет текста */
+    max-width: 100vh; /* Ограничение ширины контента */
+}
+
+.regione-content h1 {
+    margin-top: 4.8vh;
+    font-size: 2.875rem;
+    margin-bottom: 4.8vh;
+}    
+.regione-content h2 {
+    font-size: 0.875rem; /* Размер заголовка */
+    margin-bottom: 3.2vh; /* Отступ между заголовком и описанием */
+}
+
+.city-but a {
+    text-decoration: none;
+    color: white;
+}    
+.city-but {
+    margin-top: 9.6vh;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.125rem;
+    background-color: #416ECB;
+    border: none;
+    border-radius: 5px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Анимация при наведении */
+}
+
+.city-but:hover {
+    background-color: #012F8D;
+    transform: scale(1.03); /* Небольшое увеличение */
+}
+
+.section-cent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section-cent h1 {
+    margin-top: 10vh;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-size: 2.5rem;
+}
+.sectionrow {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    font-size: 0.875rem;
+    align-items: right;
+    justify-content: space-between;
+    border-bottom: 2px solid #416ECB;
+    width: 90%; 
+}
+.blocright {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравниваем все элементы блока вправо */
+}
+
+.pright {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: auto; /* Двигаем текст вправо */
+    text-align: left; /* Оставляем текст выровненным влево */
+}
+
+.blocleft,
+.blocright {
+    margin-bottom: 10vh;
+}
+.sectionrow p {
+    width: 90%;
+    margin-bottom: 4.8vh;
+}
+.sectionh3 {
+    width: 90%;
+    font-size: 0.875rem;
+    margin-top: 4.8vh;
+}
+.sectiondawn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem;
+    margin-top: 20px;
+    background-color: #EFEFEF;
+    margin-bottom: 8vh;
+}
+.dawninfo {
+    width: 90%;
+}
+.sectiondawn p {
+    padding: 10px 0;
+}
+
+
+
+/* Показываем на мобилке */
+@media screen and (max-width: 768px) {
+
+
+.section-cent h1 {
+    align-self: center;
+    margin: 50px 0 auto;
+}
+
+.sectionrow {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #416ECB;
+    width: 90%; 
+}
+.blocright {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем все элементы блока вправо */
+}
+
+.pright {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-right: auto; /* Двигаем текст вправо */
+    text-align: left; /* Оставляем текст выровненным влево */
+}
+
+
+.blocleft {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем все элементы блока вправо */
+}
+
+.blocleft,
+.blocright {
+    margin-bottom: 5vh;
+}
+.sectionrow p {
+    width: 90%;
+    margin-bottom: 4.8vh;
+}
+
+.sectionh3 {
+    width: 80%;
+}
+
+.dawninfo {
+    width: 80%;
+}
+
+
+}

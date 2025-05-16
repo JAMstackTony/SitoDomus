@@ -1,0 +1,775 @@
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hero-section {
+        background-position: center;
+        background-size: cover;
+        height: 115vh;
+        background-repeat: no-repeat;
+        transition: background-image 0.5s ease;
+        display: flex;
+        justify-content: flex-start; /* Начальное выравнивание слева */
+        position: relative; /* Для управления дочерними элементами */
+        background-image: url(/foto/home1.webp);
+        background-attachment: fixed;
+        flex-direction: column;
+    }	
+    .hero-section.scrolled {	
+    	background-image: url(/foto/home2.webp);
+        background-attachment: fixed;
+    }	    
+    .hero-left {
+        margin-top: 12vh;
+        display: flex;
+        flex-direction: column; /* Располагаем элементы в колонку */
+        align-items: flex-start; /* Прижимаем содержимое к левому краю */
+        transition: opacity 0.5s ease;
+        height: fit-content;
+    }
+    .hero-info {  
+        display: flex;
+        flex-direction: column;
+        margin-left: 11.2vh;
+        text-align: left;
+    }   
+    .hero-info h1 {
+        color: #565656;
+        font-size: 5rem;
+    }     
+    .hero-info a {
+        color: #0097B2;
+    }     
+    .hero-h3 {
+        margin-top: 40px;
+    }   
+    .hero-h3 a {
+        text-decoration: none;
+        color: #000;
+    }   
+    .hero-h3 h3 {
+        position: relative; /* Для позиционирования квадратика */
+        padding-left: 20px; /* Отступ для текста после квадратика */
+        margin-bottom: 10px; /* Расстояние между строками */
+    }
+    .hero-h3 h3::before {
+        content: ""; /* Создаем квадратик */
+        display: block;
+        width: 10px; /* Размер квадратика */
+        height: 10px; /* Размер квадратика */
+        background-color: #0097B2; /* Цвет квадратика (черный) */
+        position: absolute;
+        left: 0; /* Квадратик у левого края */
+        top: 50%; /* Выравнивание по центру строки */
+        transform: translateY(-50%); /* Корректировка позиции */
+    }   
+    .highlight { 
+        color: #0097B2;
+    }
+    .hero-but {
+        margin-left: 11.2vh;
+        margin-top: 12vh;
+        text-align: left;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+    }    
+    .hero-but1 a {
+        border-radius: 3px;
+        color: #000;
+        padding: 10px 20px;
+        border: 2px solid #012F8D;
+        text-decoration: none;
+        font-size: 1.625rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }   
+    .hero-but1 a:hover {
+        border: 2px solid #416ECB;
+        background-color: #416ECB;
+        color: #FFF;
+    }   
+    .hero-but2 a {
+        border-radius: 3px;
+        color: #FFF;
+        padding: 12px 22px;
+        background-color: #012F8D;
+        text-decoration: none;
+        font-size: 1.625rem;
+        transition: background-color 0.3s ease;
+    }    
+    .hero-but2 a:hover {
+        background-color: #416ECB;
+    }          
+    .section1 {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url(/foto/roma2.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0; /* Начинаем с прозрачного состояния */
+        transition: opacity 0.3s ease; /* Плавное изменение */
+    }
+    .section2 {
+        color: #FFF;
+        box-sizing: border-box;
+        text-align: center;
+        width: 70%;
+    }    
+    .section2 h1 {
+        font-size: 3rem;
+    }    
+    .section2 h2 {
+        padding: 10px;
+    }   
+    .section3 {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }   
+    .sec3-info {
+        border-bottom: 2px solid #416ECB;
+        width: 85%;
+        margin-bottom: 20.8vh;
+    } 
+    .sec3-info h1 { 
+        margin-top: 8vh;
+        font-size: 3rem;
+        padding: 20px;
+    }    
+    .serv-info {
+        margin-bottom: 19.2vh;
+    }    
+    .serv-text {
+        margin-top: 3.2vh;
+        margin-bottom: 3.2vh;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 3.2vh;
+    }  
+    .serv-block {          
+        margin-top: 3.2vh;
+        display: flex;
+        justify-content: center; /* Расположение блоков с равным отступом между ними */
+        flex-wrap: wrap;
+        width: calc(100% - 0px);
+    }
+    .serv-block-1 { 
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 3.2vh;  
+        width: 47%;       
+        text-align: left;
+    }   
+    .serv-h1 {  
+        font-size: 0.9375rem;
+    }   
+    .serv-h2 {
+        margin-top: 3.2vh;  
+        font-size: 0.9375rem;
+    }
+
+    .section-anunci {
+        margin-bottom: 16vh;
+        display: flex;
+        flex-wrap: wrap; /* Размещаем объявления в несколько рядов */
+        gap: 10px; /* Расстояние между объявлениями (по горизонтали и вертикали) */
+        justify-content: space-between; /* Равномерное распределение элементов */
+        margin-top: 4.8vh; /* Отступ сверху */
+    }
+
+          /* Стиль для каждого блока объявления */
+    .bottom-block {
+        width: calc(33.33% - 10px); /* Три блока в ряд с учётом отступов */
+        background-color: #ffffff; /* Белый фон */
+        border: 1px solid #e0e0e0; /* Легкая граница */
+        overflow: hidden; /* Убираем выход за границы */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+    }
+
+           /* Эффект при наведении на блок */
+    .bottom-block:hover {
+        transform: translateY(-5px); /* Поднятие блока */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Усиление тени */
+    }
+
+       /* Стиль для карусели */
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 32vh; /* Высота изображений */
+        overflow: hidden;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Изображения заполняют контейнер */
+        display: none; /* Скрываем все изображения */
+    }
+
+    .carousel-image.active {
+        display: block; /* Показываем только активное изображение */
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        z-index: 10;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+        /* Информация об объекте */
+    .info-block1 {
+        text-decoration: none; /* Убираем подчёркивание ссылки */
+        color: black; /* Цвет текста */
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin: 10px;
+        display: block;
+    }
+
+    .price {
+        gap: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .euro,
+    .rif {
+        text-decoration: none;
+        color: #29A3E2; /* Цвет ссылок */
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .rif {
+        margin-left: auto;
+    }
+    .euro1 {
+        text-decoration: line-through; /* Зачеркивание текста */
+        text-decoration-color: red; /* Цвет линии зачеркивания */
+        color: black; /* Цвет ссылок */
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .details span {
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+        color: #333;
+    }
+
+    .details img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+       /* Кнопка "Vedi Immobile" */
+    .cta {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .glass-button {
+        background-color: #416ECB;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .glass-button:hover {
+        background-color: #012F8D;
+    }
+
+
+    .section4 {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin-bottom: 4.8vh;
+    }   
+    .section4 h1 {
+        font-size: 3rem;
+        color: #565656;
+        margin-left: 16vh;
+    }    
+    .block-city {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 8vh;
+        margin-bottom: 6.4vh;
+    }   
+    .city-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;            
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        color: black;
+        z-index: 3;
+        transition: color 0.3s ease;
+    }    
+    .city-container:hover {
+        color: white;
+    }   
+    .city-container:hover .city-but a {
+        color: #FFF;
+        padding: 10px 50px;
+        background-color: #012F8D;
+        text-decoration: none;
+        font-size: 1.75rem;
+    }   
+    .city-container:hover .city-but a:hover { 
+        background-color: #416ECB;
+        border-color: #416ECB;
+    }     
+    .block-city h2 { 
+        cursor: default;
+        margin-bottom: 8vh;
+        font-size: 3rem;            
+    }   
+    .block-city h3 { 
+        padding: 0 20px;
+        cursor: default;
+        margin-bottom: 9.6vh;
+        font-size: 1rem;            
+    }  
+    .city-but {
+        margin-bottom: 9.6vh;
+    }    
+    .city-but a {
+        border-radius: 3px;
+        color: #000;
+        padding: 10px 50px;
+        border: 2px solid #012F8D;
+        text-decoration: none;
+        font-size: 1.75rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }                       
+    .city {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        flex: 1;
+        box-sizing: border-box;
+        margin: 0;
+        border: none;
+        height: 96vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;             
+    }          
+    .city::after {
+        content: ""; /* Создаем псевдоэлемент */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Занимает всю ширину блока */
+        height: 60%; /* Высота градиента — половина блока */
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0)); /* Градиент от белого к прозрачному */
+        opacity: 1; /* По умолчанию видимый */
+        z-index: 0; /* Помещаем градиент поверх фона */
+    }         
+    .city:hover::after {        
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent); /* Новый градиент */
+        opacity: 0; /* Скрываем белый градиент */
+    }          
+    .city::before {          
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent); /* Черный градиент */
+        z-index: 2;
+        opacity: 0; /* По умолчанию скрыт */
+        transition: opacity 0.9s ease; /* Плавное появление */            
+    }                    
+    .city:hover::before {        
+        opacity: 1; /* Скрываем белый градиент */
+    }         
+
+    .but1_mob {      
+        display: none;  
+    }         
+
+    .desktop-hide {
+        display: none;
+    }
+
+/* Показываем на мобилке */
+@media screen and (max-width: 768px) {
+
+    .hero-section {
+        justify-content: flex-start;
+        height: 90vh;
+        width: 100%;
+        background-image: url(/foto/home2.webp);
+    } 
+
+    .hero-left {
+        margin: 6vh;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        transition: opacity 0.5s ease;
+    }
+
+    .hero-info {  
+        margin-left: 0 !important;
+        justify-content: center;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }   
+    .hero-info h1 {
+        color: #FFF;
+        font-size: 2.5rem;
+    }     
+
+    .hero-info h2 {
+        margin-top: 3.2vh;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 100;
+    } 
+
+    .hero-info a {
+        color: #0097B2;
+    }     
+    .hero-h3 {
+        margin-top: 40px;
+    }   
+    .hero-h3 a {
+        text-decoration: none;
+        color: #FFF;
+    }   
+    .hero-h3 h3 {
+        font-weight: 100;
+        position: relative; /* Для позиционирования квадратика */
+        margin-bottom: 10px; /* Расстояние между строками */
+    }
+    .hero-h3 h3::before {
+        display: none;
+    }   
+
+    .hero-but {
+        justify-content: flex-start;
+        margin: 6vh auto 0 auto;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }    
+    .but1_mob {      
+        display: flex;  
+    }  
+    .but1_des {      
+        display: none;  
+    }   
+    .hero-but1 {
+        width: 100%;
+    }   
+
+    .hero-but1 a {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        border-radius: 3px;
+        color: #FFF;
+        padding: 10px 20px;
+        border: 2px solid #012F8D;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }   
+    .hero-but1 a:hover {
+        border: 2px solid #416ECB;
+        background-color: #416ECB;
+        color: #FFF;
+    }   
+   
+    .hero-but2 {
+        width: 100%;
+    }
+
+    .hero-but2 a {
+        box-sizing: border-box;
+        display: block;        
+        width: 100%;
+        border-radius: 3px;
+        color: #FFF;
+        padding: 12px 30px;
+        background-color: #012F8D;
+        text-decoration: none;
+        font-size: 1.625rem;
+        transition: background-color 0.3s ease;
+    }    
+    .hero-but2 a:hover {
+        background-color: #416ECB;
+    }
+
+    .section1 {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url(/foto/roma2.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0; /* Начинаем с прозрачного состояния */
+        transition: opacity 0.3s ease; /* Плавное изменение */
+    }
+    .section2 {
+        color: #FFF;
+        box-sizing: border-box;
+        text-align: center;
+        width: 90%;
+    }    
+    .section2 h1 {
+        font-size: 3rem;
+    }    
+    .section2 h2 {
+        padding: 10px;
+        font-weight: 100;
+    } 
+
+    .section3 {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }   
+    .sec3-info {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #416ECB;
+        width: 90%;
+        margin-bottom: 10vh;
+    }    
+    .serv-info {
+        margin-bottom: 9vh;
+        justify-content: center;
+    }    
+    .serv-text {
+        margin-top: 3.2vh;
+        margin-bottom: 3.2vh;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }  
+    .serv-block {          
+        margin: 0px 3.2vh;
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .serv-block-1 { 
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 3.2vh;  
+        width: 100%;       
+        text-align: left;
+    }   
+    .serv-h1 {  
+        font-size: 0.9375rem;
+    }   
+    .serv-h2 {
+        margin-top: 3.2vh;  
+        font-size: 0.9375rem;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+    .section-anunci {
+        margin-bottom: 10vh;
+        display: flex;
+        flex-wrap: wrap; /* Размещаем объявления в несколько рядов */
+        gap: 10px; /* Расстояние между объявлениями (по горизонтали и вертикали) */
+        justify-content: space-between; /* Равномерное распределение элементов */
+        margin-top: 4.8vh; /* Отступ сверху */
+        border-bottom: 2px solid #416ECB;
+    }
+
+          /* Стиль для каждого блока объявления */
+    .bottom-block {
+        width: 100%; /* Три блока в ряд с учётом отступов */
+        background-color: #ffffff; /* Белый фон */
+        border: 1px solid #e0e0e0; /* Легкая граница */
+        overflow: hidden; /* Убираем выход за границы */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+        margin-bottom: 10vh;
+    }
+
+    .bottom-block:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        cursor: default;
+    }
+
+
+    .section4 {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin-bottom: 4.8vh;
+    }   
+    .section4 h1 {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #565656;
+        margin: 0 auto;
+    } 
+
+  .block-city {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .block-city .city {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .block-city .city::after {
+    display: none !important;
+  }
+
+  .city-container {
+    justify-content: center;
+    padding: 20px;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+    background: none;
+  }
+
+  .city h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FFF;
+    margin-bottom: 4vh;
+  }
+
+  .city h3 {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #FFF;
+    margin-bottom: 20vh;
+  }
+
+  .city-but a {
+    font-size: 1rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 2px solid #012F8D;
+    background-color: #012F8D;
+    color: #FFF;
+    border-radius: 3px;
+    transition: 0.3s ease;
+  }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-dots .dot.active {
+    background-color: #012F8D;
+  }
+
+  .block-city .city::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+
+}        

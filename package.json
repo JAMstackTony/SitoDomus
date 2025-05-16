@@ -1,0 +1,19 @@
+{
+  "name": "sito-iriny",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "Tony",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "fs-extra": "^11.3.0",
+    "heic-convert": "^2.1.0",
+    "sharp": "^0.34.1"
+  }
+}

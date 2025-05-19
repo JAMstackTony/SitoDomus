@@ -10,8 +10,8 @@
         background-repeat: no-repeat;
         transition: background-image 0.5s ease;
         display: flex;
-        justify-content: flex-start; /* Начальное выравнивание слева */
-        position: relative; /* Для управления дочерними элементами */
+        justify-content: flex-start; 
+        position: relative; 
         background-image: url(/foto/home1.webp);
         background-attachment: fixed;
         flex-direction: column;
@@ -23,8 +23,8 @@
     .hero-left {
         margin-top: 12vh;
         display: flex;
-        flex-direction: column; /* Располагаем элементы в колонку */
-        align-items: flex-start; /* Прижимаем содержимое к левому краю */
+        flex-direction: column; 
+        align-items: flex-start; 
         transition: opacity 0.5s ease;
         height: fit-content;
     }
@@ -446,7 +446,11 @@
         justify-content: flex-start;
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/home2.webp);
+        background-image: url(/foto/Home10.webp);
+    } 
+
+    .hero-section.scrolled {
+        background-image: url(/foto/Home10.webp);
     } 
 
     .hero-left {
@@ -659,6 +663,9 @@
         box-shadow: none !important;
         cursor: default;
     }
+    .carousel-btn {
+        display: none;
+    }
 
 
     .section4 {
@@ -736,6 +743,19 @@
     color: #FFF;
     border-radius: 3px;
     transition: 0.3s ease;
+  }
+
+    .city-container:hover .city-but a {
+    color: inherit;
+    padding: inherit;
+    background-color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+  }
+
+  .city-container:hover .city-but a:hover {
+    background-color: inherit;
+    border-color: inherit;
   }
 
   .carousel-dots {

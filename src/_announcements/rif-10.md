@@ -1,23 +1,29 @@
 ---
 riferimento: "10"
-nomeAnunci: ""
+nomeAnunci: "Apartmán 3+kk v centru města Scalea"
 nomeZona: ""
-city1: ""
+city1: "Scalea"
 street1: ""
 RIF1: "10"
-prezzo1: "NA ZNAMENÍ"
-prezzosconto: ""
-tipo: ""
-rooms: ""
-bagni: ""
-zonam2: ""
+prezzo1: "148.000"
+prezzosconto: "155.000"
+tipo: "Apartmán"
+rooms: "3"
+bagni: "2"
+zonam2: "100 m²"
 floor: ""
-bedroom: ""
+bedroom: "2"
 elevator: ""
-terrazzo: ""
-prezzo: "NA ZNAMENÍ"
-text: ""
-textInfo: ""
+terrazzo: "Ano"
+prezzo: "148.000"
+text: "Na prodej – apartmán 3+kk v centru města Scalea, Itálie"
+textInfo: "Nabízíme k prodeji prostorný a světlý apartmán o dispozici 3+kk a celkové ploše 100 m², situovaný v centrální části města Scalea, pouhých 700 metrů od moře.
+
+Nachází se ve 2. patře udržovaného domu a prošel kompletní a kvalitní rekonstrukcí. K dispozici jsou dva balkony, ideální pro odpočinek či posezení, a dvě prostorné koupelny. Interiér je světlý, vzdušný a připravený k okamžitému užívání.
+
+Součástí nabídky je i soukromé parkovací místo v uzavřeném kondominiu.
+
+Skvělá příležitost pro trvalé bydlení, rekreaci i jako investice."
 images:
   - src: foto/Galeri/rif-10 (1).webp
   - src: foto/Galeri/rif-10 (2).webp

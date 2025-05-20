@@ -15,10 +15,6 @@
         background-image: url(/foto/home1.webp);
         background-attachment: fixed;
         flex-direction: column;
-    }	
-    .hero-section.scrolled {	
-    	background-image: url(/foto/home2.webp);
-        background-attachment: fixed;
     }	    
     .hero-left {
         margin-top: 12vh;
@@ -350,18 +346,7 @@
     }    
     .city-container:hover {
         color: white;
-    }   
-    .city-container:hover .city-but a {
-        color: #FFF;
-        padding: 10px 50px;
-        background-color: #012F8D;
-        text-decoration: none;
-        font-size: 1.75rem;
-    }   
-    .city-container:hover .city-but a:hover { 
-        background-color: #416ECB;
-        border-color: #416ECB;
-    }     
+    }       
     .block-city h2 { 
         cursor: default;
         margin-bottom: 8vh;
@@ -446,10 +431,6 @@
         justify-content: flex-start;
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/Home10.webp);
-    } 
-
-    .hero-section.scrolled {
         background-image: url(/foto/Home10.webp);
     } 
 
@@ -743,19 +724,6 @@
     color: #FFF;
     border-radius: 3px;
     transition: 0.3s ease;
-  }
-
-    .city-container:hover .city-but a {
-    color: inherit;
-    padding: inherit;
-    background-color: inherit;
-    text-decoration: inherit;
-    font-size: inherit;
-  }
-
-  .city-container:hover .city-but a:hover {
-    background-color: inherit;
-    border-color: inherit;
   }
 
   .carousel-dots {

@@ -1,6 +1,6 @@
 ---
 riferimento: "5"
-nomeAnunci: "Vila nabízí dvě prostorné a dobře prosvětlené ložnice"
+nomeAnunci: "Nádhernou samostatnou vilu"
 nomeZona: "Cosenza"
 city1: "Diamante "
 street1: ""
@@ -10,25 +10,42 @@ prezzosconto: ""
 tipo: "VIlla"
 rooms: ""
 bagni: ""
-zonam2: ""
-floor: ""
+zonam2: "115 m²"
+floor: "2"
 bedroom: ""
-elevator: ""
-terrazzo: ""
+elevator: "Ne"
+terrazzo: "Ano"
 prezzo: "NA ZNAMENÍ"
-text: ""
-textInfo: ""
+text: "Na prodej v Diamante (CS) nabízíme nádhernou samostatnou vilu určenou k bydlení"
+textInfo: "Se čtyřmi pokoji a jednou koupelnou – ideální pro ty, kteří hledají klidné a soukromé prostředí.
+Nemovitost je rozložena na jednom podlaží o celkové ploše 115 m² a je plně zařízená. V přízemí se nachází garáž, kterou je možné upravit na druhou obytnou jednotku.
+
+Hlavní vchod vede do prostorného dvojitého obývacího pokoje, který je vybaven útulným krbem – ideálním pro zimní večery.
+Samostatná, světlá a plně vybavená kuchyně poskytuje veškerý komfort pro přípravu chutných jídel, která si můžete vychutnat v kruhu rodiny či přátel.
+
+Vila nabízí dvě prostorné a dobře prosvětlené ložnice, které zajišťují maximální pohodlí a odpočinek.
+K dispozici jsou také dva balkony s panoramatickým výhledem na moře a okolní zeleň – ideální místo pro chvíle relaxace na čerstvém vzduchu.
+
+Soukromá zahrada s ovocným sadem o rozloze 3500 m² je pečlivě udržovaná a poskytuje dokonalé prostředí pro odpočinek v naprostém soukromí.
+Součástí nemovitosti je také garáž, která nabízí pohodlné parkování.
+
+Vila je aktuálně volná a připravená k okamžitému nastěhování. Jedná se o ideální řešení pro ty, kdo hledají klidné a soukromé bydlení, přesto v blízkosti všech důležitých služeb a hlavních dopravních tras.
+
+Uvedená cena je konečná a zahrnuje veškeré náklady spojené s pořízením nemovitosti.
+
+Nezmeškejte tuto fantastickou příležitost pořídit si samostatnou vilu se všemi potřebnými komforty pro život v naprostém pohodlí a klidu.
+Kontaktujte nás pro domluvení prohlídky a přesvědčte se sami o veškerých kvalitách této úžasné nemovitosti."
 images:
-  - src: foto/Galeri/rif-5 (1).webp
-  - src: foto/Galeri/rif-5 (2).webp
+  - src: foto/Galeri/rif-5 (8).webp
+  - src: foto/Galeri/rif-5 (10).webp
   - src: foto/Galeri/rif-5 (3).webp
   - src: foto/Galeri/rif-5 (4).webp
   - src: foto/Galeri/rif-5 (5).webp
   - src: foto/Galeri/rif-5 (6).webp
   - src: foto/Galeri/rif-5 (7).webp
-  - src: foto/Galeri/rif-5 (8).webp
+  - src: foto/Galeri/rif-5 (1).webp
   - src: foto/Galeri/rif-5 (9).webp  
-  - src: foto/Galeri/rif-5 (10).webp
+  - src: foto/Galeri/rif-5 (2).webp
   - src: foto/Galeri/rif-5 (11).webp
   - src: foto/Galeri/rif-5 (12).webp
   - src: foto/Galeri/rif-5 (13).webp

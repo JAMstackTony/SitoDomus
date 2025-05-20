@@ -6,7 +6,7 @@
         display: flex;
         justify-content: flex-start; /* Начальное выравнивание слева */
         position: relative; /* Для управления дочерними элементами */
-        background-image: url(/foto/info.png);
+        background-image: url(/foto/info.webp);
         flex-direction: column;
         overflow: hidden; /* Обрезаем всё, что выходит за пределы блока */
     	border-bottom: 10px solid #012F8D;

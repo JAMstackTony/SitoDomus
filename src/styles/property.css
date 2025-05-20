@@ -178,6 +178,10 @@
 /* Показываем на мобилке */
 @media screen and (max-width: 768px) {
 
+.content-bottom {
+    width: 100%;
+}
+
 .filter {
     height: 10vh;
 } 
@@ -185,6 +189,7 @@
   .bottom-block {
     flex-direction: column;
     height: auto;
+    border-radius: 0px;
   }
 
   .carousel-container {
@@ -224,6 +229,10 @@
     font-size: 1.125rem;
     padding: 14px;
   }
+  .carousel-btn {
+      display: none;
+  }
+
 
 
 }

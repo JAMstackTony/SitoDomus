@@ -32,11 +32,6 @@ V docházkové vzdálenosti najdete restaurace, pláže, bary a další služby.
 Cena: 183 000 EUR – konečná cena včetně všech poplatků, právních služeb a daně z převodu nemovitosti.
 
 Pro více informací a sjednání prohlídky nás neváhejte kontaktovat!"
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-6 (2).webp
   - src: foto/Galeri/rif-6 (27).webp

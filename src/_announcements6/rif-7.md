@@ -24,11 +24,6 @@ Vila má obytnou plochu 133 m², doplněnou o terasy a patio o rozloze 117 m². 
 Interiér je vybaven elegantním nábytkem a krbem, což vytváří příjemnou atmosféru po celý rok. Jen 800 metrů od domu se nachází krásné azurové moře – ideální volba pro milovníky života u vody.
 
 Cena: 329 000 € včetně veškerých nákladů"
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-7 (39).webp
   - src: foto/Galeri/rif-7 (26).webp

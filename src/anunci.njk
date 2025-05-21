@@ -70,11 +70,6 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
         <div class="info-prev">
                 <span>{{ announcement.data.nomeAnunci }}</span>
                 <span>{{ announcement.data.street1 }}</span>
-            <div class="details1">
-                <span><img alt="Casa" src="/foto/icon/mq.svg"> {{ announcement.data.zonam2 }}</span>  
-                <span><img alt="Camere da letto" src="/foto/icon/locale.svg"> {{ announcement.data.bedroom }}</span>
-                <span><img alt="Bagno" src="/foto/icon/bagno.svg"> {{ announcement.data.bagni }}</span>
-            </div>
         </div>
         <div class="sec-info1">
             <span>{{ announcement.data.text }}</span>
@@ -83,6 +78,21 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             <h1>Hlavní charakteristiky</h1>
             <span>{{ announcement.data.textInfo }}</span>
         </div>
+        <div class="sec-info3">
+            <span>{{ announcement.data.textInfo1 }}</span>
+        </div>
+        <div class="sec-info3">
+            <span>{{ announcement.data.textInfo2 }}</span>
+        </div>
+        <div class="sec-info3">
+            <span>{{ announcement.data.textInfo3 }}</span>
+        </div>
+        <div class="sec-info3">
+            <span>{{ announcement.data.textInfo4 }}</span>
+        </div>
+        <div class="sec-info3">
+            <span>{{ announcement.data.textInfo5 }}</span>
+        </div>                                
     </div>
     <div class="section-offer">
       <div class="random-offer">
@@ -93,7 +103,13 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
         {% if count < 3 %}
         <div class="bottom-block" data-id="{{ random.data.riferimento }}" data-riferimento="{{ random.data.riferimento }}" data-city="{{ random.data.city1 }}" data-zona="{{ random.data.nomeZona }}" data-tipo="{{ random.data.tipo }}">
             <div class="carousel-container2">
-            <img src="/{{ random.data.images[0] }}" class="carousel-image2" alt="Property Image">
+            {% if random.data.images and random.data.images.length > 0 %}
+            <img
+                loading="lazy"
+                src="/{{ random.data.images[0].src | urlencode }}"
+                alt="{{ random.data.images[0].alt or 'Property Image' }}"
+                class="carousel-image2">
+            {% endif %}
             </div>
             <a class="info-block1" href="/anunci/{{ random.fileSlug }}/">
                 <div class="info-anunci">{{ random.data.nomeAnunci }}</div>

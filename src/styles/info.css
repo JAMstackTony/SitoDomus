@@ -10,6 +10,7 @@
         flex-direction: column;
         overflow: hidden; /* Обрезаем всё, что выходит за пределы блока */
     	border-bottom: 10px solid #012F8D;
+        margin-bottom: 8vh;
         width: 100%;     
     }
 

@@ -35,11 +35,6 @@ Uvedená cena je konečná a zahrnuje veškeré náklady spojené s pořízením
 
 Nezmeškejte tuto fantastickou příležitost pořídit si samostatnou vilu se všemi potřebnými komforty pro život v naprostém pohodlí a klidu.
 Kontaktujte nás pro domluvení prohlídky a přesvědčte se sami o veškerých kvalitách této úžasné nemovitosti."
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-5 (8).webp
   - src: foto/Galeri/rif-5 (10).webp

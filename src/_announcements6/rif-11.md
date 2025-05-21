@@ -46,11 +46,6 @@ Soukromí a klid:
 Samostatný vstup zaručuje naprosté soukromí a nezávislost. 
 
 Cena: 191 000 eur"
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-11 (1).webp
   - src: foto/Galeri/rif-11 (2).webp

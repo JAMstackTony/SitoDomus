@@ -25,11 +25,6 @@ Apartmán prošel kompletní a kvalitní rekonstrukcí a je připraven k okamži
 Poznámka: Pro pohodlný pohyb v oblasti (například cesta k moři, které je vzdálené cca 1500 metrů) je téměř nezbytné mít vlastní automobil.
 
 Cena: 91 000 EUR"
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-3 (6).webp
   - src: foto/Galeri/rif-3 (12).webp

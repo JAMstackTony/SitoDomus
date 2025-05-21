@@ -28,11 +28,6 @@ Poloha je zcela výjimečná – jen pár kroků od nádherné soukromé pláže
 
 Jedinečná příležitost pro ty, kteří hledají klidné místo v blízkosti všech služeb a chtějí si užívat chvíle čisté pohody.
 Cena 125000 eur"
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-8 (5).webp
   - src: foto/Galeri/rif-8 (8).webp

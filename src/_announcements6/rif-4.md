@@ -19,11 +19,6 @@ prezzo: "63.000"
 text: "Krásný apartmán ve městě Scalea! Skvělý stav, velký balkon, příjemný výhled"
 textInfo: "Krásný apartmán ve městě Scalea! Skvělý stav, velký balkon, příjemný výhled, bezproblémové parkování. 
 Apartmán má velikost 3+kk a prodává se kompletně zařízený nábytkem. Konečná cena včetně veškerých nákladu 63 000 eur."
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-4 (9).webp
   - src: foto/Galeri/rif-4 (18).webp

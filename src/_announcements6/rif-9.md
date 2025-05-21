@@ -25,11 +25,6 @@ Součástí areálu je krásně upravený zelený park, vjezd zajištěn přes z
 Parkování přímo u domu.
 
 Skvělá investice nebo ideální místo pro dovolenou."
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-9 (19).webp
   - src: foto/Galeri/rif-9 (21).webp

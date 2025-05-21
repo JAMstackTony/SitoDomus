@@ -24,11 +24,6 @@ Nachází se ve 2. patře udržovaného domu a prošel kompletní a kvalitní re
 Součástí nabídky je i soukromé parkovací místo v uzavřeném kondominiu.
 
 Skvělá příležitost pro trvalé bydlení, rekreaci i jako investice."
-textInfo1: ""
-textInfo2: ""
-textInfo3: ""
-textInfo4: ""
-textInfo5: ""
 images:
   - src: foto/Galeri/rif-10 (1).webp
   - src: foto/Galeri/rif-10 (2).webp

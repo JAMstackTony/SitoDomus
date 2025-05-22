@@ -303,6 +303,15 @@
     text-decoration: none;
 }
 
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
 
 /* Показываем на мобилке */
 @media screen and (max-width: 768px) {

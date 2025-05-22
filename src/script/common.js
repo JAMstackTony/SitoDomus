@@ -34,3 +34,22 @@ function toggleMenu() {
     nav.classList.toggle("nav-active");
     burger.classList.toggle("active");
 }
+
+
+document.getElementById('lang-switcher').addEventListener('change', function () {
+  const lang = this.value;
+
+  const iframe = document.querySelector('iframe.goog-te-banner-frame');
+  if (iframe) iframe.remove(); // убиваем баннер
+
+  // Добавим задержку, чтобы дожидаться появления .goog-te-combo
+  setTimeout(() => {
+    const googleSelect = document.querySelector('.goog-te-combo');
+    if (googleSelect) {
+      googleSelect.value = lang;
+      googleSelect.dispatchEvent(new Event('change'));
+    }
+  }, 100);
+});
+
+

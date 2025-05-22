@@ -39,15 +39,12 @@ function toggleMenu() {
 document.getElementById('lang-switcher').addEventListener('change', function () {
   const lang = this.value;
 
-  const iframe = document.querySelector('iframe.goog-te-banner-frame');
-  if (iframe) iframe.remove(); // убиваем баннер
-
-  // Добавим задержку, чтобы дожидаться появления .goog-te-combo
-  setTimeout(() => {
+  const interval = setInterval(() => {
     const googleSelect = document.querySelector('.goog-te-combo');
     if (googleSelect) {
       googleSelect.value = lang;
       googleSelect.dispatchEvent(new Event('change'));
+      clearInterval(interval);
     }
   }, 100);
 });

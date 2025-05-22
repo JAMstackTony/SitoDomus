@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | Sito Tony's{% else %}Sito Tony's{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | domusitaliana{% else %}domusitaliana{% endif %}</title>
     <link rel="stylesheet" href="/styles/common.css">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
@@ -32,14 +32,21 @@
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
-      pageLanguage: 'cz',
-      includedLanguages: 'en,ru,de,lt,pl,fi,cz',
+      pageLanguage: 'cs',
+      includedLanguages: 'en,ru,de,lt,pl,fi,cs',
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
       autoDisplay: false
     }, 'google_translate_element');
   }
+
+  window.addEventListener('load', () => {
+    if (typeof google !== 'undefined' && google.translate) {
+      googleTranslateElementInit();
+    }
+  });
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <div id="google_translate_element" style="display: none;"></div>
 
 

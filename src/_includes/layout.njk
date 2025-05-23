@@ -37,17 +37,33 @@
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
       autoDisplay: false
     }, 'google_translate_element');
+
+    // Запускаем связь после инициализации
+    bindCustomLangSelector();
   }
 
-  window.addEventListener('load', () => {
-    if (typeof google !== 'undefined' && google.translate) {
-      googleTranslateElementInit();
-    }
-  });
+  function bindCustomLangSelector() {
+    const langSwitcher = document.getElementById('lang-switcher');
+    if (!langSwitcher) return;
+
+    langSwitcher.addEventListener('change', () => {
+      const selectedLang = langSwitcher.value;
+
+      // Ждём пока появится .goog-te-combo
+      const interval = setInterval(() => {
+        const googleSelect = document.querySelector('.goog-te-combo');
+        if (googleSelect) {
+          googleSelect.value = selectedLang;
+          googleSelect.dispatchEvent(new Event('change'));
+          clearInterval(interval);
+        }
+      }, 200);
+    });
+  }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <div id="google_translate_element" style="display: none;"></div>
+
 
 
 

@@ -303,14 +303,12 @@
     text-decoration: none;
 }
 
-.goog-te-banner-frame.skiptranslate,
-body > .skiptranslate,
 .goog-te-gadget-icon {
-  display: none !important;
+  display: none !important; /* Скрывает иконку Google Translate */
 }
 
-body {
-  top: 0px !important;
+.goog-te-banner-frame.skiptranslate {
+  display: none !important; /* Скрывает верхнюю полосу Google Translate */
 }
 
 /* Показываем на мобилке */

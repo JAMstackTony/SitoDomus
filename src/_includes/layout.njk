@@ -44,21 +44,20 @@
     langSwitcher.addEventListener('change', () => {
       const selectedLang = langSwitcher.value;
 
-      const observer = new MutationObserver(() => {
+      const interval = setInterval(() => {
         const googleSelect = document.querySelector('.goog-te-combo');
         if (googleSelect) {
           googleSelect.value = selectedLang;
           googleSelect.dispatchEvent(new Event('change'));
-          observer.disconnect();
+          clearInterval(interval);
         }
-      });
-
-      observer.observe(document.body, { childList: true, subtree: true });
+      }, 200);
     });
   }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <div id="google_translate_element" style="display: none;"></div>
+
 
 
 

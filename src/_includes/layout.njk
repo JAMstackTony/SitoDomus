@@ -29,7 +29,7 @@
     <script src="/script/common.js"></script>
 
 
-<script type="text/javascript">
+<script>
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
       pageLanguage: 'cs',
@@ -38,36 +38,28 @@
       autoDisplay: false
     }, 'google_translate_element');
 
-    // Связываем после загрузки
-    observeGoogleCombo();
-  }
-
-  function observeGoogleCombo() {
     const langSwitcher = document.getElementById('lang-switcher');
+
     if (!langSwitcher) return;
 
     langSwitcher.addEventListener('change', () => {
       const selectedLang = langSwitcher.value;
 
-      const observer = new MutationObserver(() => {
+      const trySetLang = setInterval(() => {
         const googleSelect = document.querySelector('.goog-te-combo');
         if (googleSelect) {
           googleSelect.value = selectedLang;
           googleSelect.dispatchEvent(new Event('change'));
-          observer.disconnect();
+          clearInterval(trySetLang);
         }
-      });
-
-      // Наблюдаем за появлением .goog-te-combo
-      observer.observe(document.body, {
-        childList: true,
-        subtree: true
-      });
+      }, 200);
     });
   }
 </script>
+
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<div id="google_translate_element"></div>
+<div id="google_translate_element" style="display: none;"></div>
+
 
 
 

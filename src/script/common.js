@@ -36,17 +36,5 @@ function toggleMenu() {
 }
 
 
-document.getElementById('lang-switcher').addEventListener('change', function () {
-  const lang = this.value;
-
-  const interval = setInterval(() => {
-    const googleSelect = document.querySelector('.goog-te-combo');
-    if (googleSelect) {
-      googleSelect.value = lang;
-      googleSelect.dispatchEvent(new Event('change'));
-      clearInterval(interval);
-    }
-  }, 100);
-});
 
 

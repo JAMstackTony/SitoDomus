@@ -26,6 +26,23 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownItem.classList.remove('active');
         }
     });
+
+    // Синхронизация селектора языка с Google Translate
+    const langSwitcher = document.getElementById('lang-switcher');
+    if (langSwitcher) {
+        langSwitcher.addEventListener('change', () => {
+            const selectedLang = langSwitcher.value;
+            waitForTranslateAndSwitch(selectedLang);
+            localStorage.setItem('selectedLang', selectedLang); // Сохраняем выбранный язык
+        });
+
+        // Загружаем сохраненный язык из localStorage
+        const savedLang = localStorage.getItem('selectedLang');
+        if (savedLang) {
+            waitForTranslateAndSwitch(savedLang);
+            langSwitcher.value = savedLang;
+        }
+    }
 });
 
 function toggleMenu() {
@@ -35,6 +52,17 @@ function toggleMenu() {
     burger.classList.toggle("active");
 }
 
+// Функция для ожидания загрузки Google Translate
+function waitForTranslateAndSwitch(lang) {
+    let intervalId = setInterval(() => {
+        const googleSelect = document.querySelector('.goog-te-combo');
+        if (googleSelect) {
+            clearInterval(intervalId); // Остановить интервал, если элемент найден
+            googleSelect.value = lang;
+            googleSelect.dispatchEvent(new Event('change'));
+        }
+    }, 100); // Проверять каждые 100 мс
+}
 
 
 

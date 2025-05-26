@@ -12,6 +12,29 @@
     font-family: 'Lunasima', sans-serif;
 }
     </style>
+
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'cs',
+        includedLanguages: 'en,ru,de,lt,pl,fi,cs',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    function waitForTranslateAndSwitch(lang) {
+      const interval = setInterval(() => {
+        const select = document.querySelector('.goog-te-combo');
+        if (select) {
+          select.value = lang;
+          select.dispatchEvent(new Event('change'));
+          clearInterval(interval);
+        }
+      }, 200);
+    }
+  </script>
+
 </head>
 <body>
     <!-- Включаем шапку -->
@@ -29,38 +52,19 @@
 
 
 <script>
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'cs',
-      includedLanguages: 'en,ru,de,lt,pl,fi,cs',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false
-    }, 'google_translate_element');
-  }
-
-  function waitForTranslateAndSwitch(lang) {
-    const interval = setInterval(() => {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event('change'));
-        clearInterval(interval);
-      }
-    }, 200); // ждём появления select
-  }
-
   const langSwitcher = document.getElementById('lang-switcher');
   if (langSwitcher) {
     langSwitcher.addEventListener('change', () => {
       const selectedLang = langSwitcher.value;
       waitForTranslateAndSwitch(selectedLang);
+      localStorage.setItem('selectedLang', selectedLang);
     });
 
-    // при загрузке страницы — если язык уже выбран (из localStorage), то активируем его
     const savedLang = localStorage.getItem('selectedLang');
     if (savedLang) {
       waitForTranslateAndSwitch(savedLang);
       langSwitcher.value = savedLang;
+      console.log('Trying to switch to', lang, select);
     }
   }
 </script>

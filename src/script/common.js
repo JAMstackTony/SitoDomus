@@ -26,23 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownItem.classList.remove('active');
         }
     });
-
-    // Синхронизация селектора языка с Google Translate
-    const langSwitcher = document.getElementById('lang-switcher');
-    if (langSwitcher) {
-        langSwitcher.addEventListener('change', () => {
-            const selectedLang = langSwitcher.value;
-            waitForTranslateAndSwitch(selectedLang);
-            localStorage.setItem('selectedLang', selectedLang); // Сохраняем выбранный язык
-        });
-
-        // Загружаем сохраненный язык из localStorage
-        const savedLang = localStorage.getItem('selectedLang');
-        if (savedLang) {
-            waitForTranslateAndSwitch(savedLang);
-            langSwitcher.value = savedLang;
-        }
-    }
 });
 
 function toggleMenu() {
@@ -52,17 +35,31 @@ function toggleMenu() {
     burger.classList.toggle("active");
 }
 
-// Функция для ожидания загрузки Google Translate
-function waitForTranslateAndSwitch(lang) {
-    let intervalId = setInterval(() => {
-        const googleSelect = document.querySelector('.goog-te-combo');
-        if (googleSelect) {
-            clearInterval(intervalId); // Остановить интервал, если элемент найден
-            googleSelect.value = lang;
-            googleSelect.dispatchEvent(new Event('change'));
-        }
-    }, 100); // Проверять каждые 100 мс
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const langSwitcher = document.getElementById("lang-switcher");
+
+  if (langSwitcher) {
+    langSwitcher.addEventListener("change", function () {
+      const languageMap = {
+        cs: 'cs',
+        en: 'en',
+        ru: 'ru',
+        de: 'de',
+        lt: 'lt',
+        pl: 'pl',
+        fi: 'fi'
+      };
+
+      const selectedLang = langSwitcher.value;
+      const googSelector = document.querySelector(".goog-te-combo");
+
+      if (googSelector) {
+        googSelector.value = languageMap[selectedLang];
+        googSelector.dispatchEvent(new Event("change"));
+      }
+    });
+  }
+});
 
 
 

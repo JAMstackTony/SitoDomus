@@ -28,35 +28,46 @@
 
 
 
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'cs',
-    includedLanguages: 'en,ru,de,lt,pl,fi,cs',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false
-  }, 'google_translate_element');
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'cs',
+      includedLanguages: 'en,ru,de,lt,pl,fi,cs',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+
+  function waitForTranslateAndSwitch(lang) {
+    const interval = setInterval(() => {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+        clearInterval(interval);
+      }
+    }, 200); // ждём появления select
+  }
 
   const langSwitcher = document.getElementById('lang-switcher');
-  if (!langSwitcher) return;
+  if (langSwitcher) {
+    langSwitcher.addEventListener('change', () => {
+      const selectedLang = langSwitcher.value;
+      waitForTranslateAndSwitch(selectedLang);
+    });
 
-  langSwitcher.addEventListener('change', () => {
-    const selectedLang = langSwitcher.value;
-
-    // Проверяем, загрузился ли Google Translate
-    const googleSelect = document.querySelector('.goog-te-combo');
-    if (!googleSelect) {
-      console.error("Google Translate not loaded yet!");
-      return;
+    // при загрузке страницы — если язык уже выбран (из localStorage), то активируем его
+    const savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+      waitForTranslateAndSwitch(savedLang);
+      langSwitcher.value = savedLang;
     }
-
-    googleSelect.value = selectedLang;
-    googleSelect.dispatchEvent(new Event('change'));
-  });
-}
+  }
 </script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <div id="google_translate_element" style="display: none;"></div>
+
 
 
     <!-- Подключаем скрипты -->

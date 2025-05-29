@@ -40,21 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (langSwitcher) {
     langSwitcher.addEventListener("change", function () {
-      const languageMap = {
-        cs: 'cs',
-        en: 'en',
-        ru: 'ru',
-        de: 'de',
-        lt: 'lt',
-        pl: 'pl',
-        fi: 'fi'
-      };
+      const lang = langSwitcher.value;
 
-      const selectedLang = langSwitcher.value;
       const googSelector = document.querySelector(".goog-te-combo");
-
       if (googSelector) {
-        googSelector.value = languageMap[selectedLang];
+        googSelector.value = lang;
         googSelector.dispatchEvent(new Event("change"));
       }
     });
@@ -63,3 +53,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Загружаем переводы и применяем
+function loadAndApplyTranslations(lang) {
+  fetch('/translate_static.json')
+    .then(res => res.json())
+    .then(translations => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translated = translations[key]?.[lang];
+        if (translated && translated.trim() !== '') {
+          el.textContent = translated;
+        }
+      });
+    });
+}
+
+// Применяем язык при загрузке
+document.addEventListener('DOMContentLoaded', function () {
+  const lang = localStorage.getItem('lang') || 'cs';
+  loadAndApplyTranslations(lang);
+});
+
+// Слушаем переключение языка
+document.getElementById('lang-switcher')?.addEventListener('change', function (e) {
+  const lang = e.target.value;
+  localStorage.setItem('lang', lang);
+  loadAndApplyTranslations(lang);
+});

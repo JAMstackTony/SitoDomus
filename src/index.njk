@@ -18,32 +18,32 @@ pagination:
       <div class="hero-section">
          <div class="hero-left">
             <div class="hero-info">
-              <h1>Nemovitost</h1>
-               <h2>V bezkonkurenční oblasti<a href="#huck"> Itálie</a></h2>
+              <h1 data-i18n="uph1">Nemovitost</h1>
+               <h2 data-i18n="uph2">V bezkonkurenční oblasti<a href="#huck"> Itálie</a></h2>
              <div class="hero-h3">
-                <h3><a href="#">Plná podpora</a></h3>  
-                <h3><a href="#">Pouze ověřené nemovitosti</a></h3>
-                <h3><a href="#">Nejlepší regiony Itálie</a></h3>
-                <h3><a href="#">Více než <span class="highlight"> 900 </span>úspěšných transakcí</a></h3>
+                <h3><a href="#" data-i18n="uph3/1">Plná podpora</a></h3>  
+                <h3><a href="#" data-i18n="uph3/2">Pouze ověřené nemovitosti</a></h3>
+                <h3><a href="#" data-i18n="uph3/3">Nejlepší regiony Itálie</a></h3>
+                <h3><a href="#" data-i18n="uph3/4">Více než <span class="highlight"> 900 </span>úspěšných transakcí</a></h3>
              </div>
            </div>
          </div>
                <div class="hero-but">
-                <div class="hero-but1"><a href="/property"><span class="but1_des">Galerie dostupných objektů</span><span class="but1_mob">Dostupných objektů</span></a></div>
-                <div class="hero-but2"><a href="#huck">NEMOVITOSTI</a></div>
+                <div class="hero-but1"><a href="/property"><span class="but1_des" data-i18n="upbut1">Galerie dostupných objektů</span><span class="but1_mob" data-i18n="upbut1/mob">Dostupných objektů</span></a></div>
+                <div class="hero-but2"><a href="#huck" data-i18n="upbut2">NEMOVITOSTI</a></div>
                </div>
       </div>
 
           <div class="section1">
               <div class="section2">
-                  <h1>O Itálii</h1>
-                  <h2>Proč je Itálie stabilní volbou pro investice do nemovitostí? Itálie není jen zemí umění, vína a moře. Je to také stát s hluboce zakořeněnou tradicí vlastnictví a podnikání.</h2>
+                  <h1 data-i18n="head1">O Itálii</h1>
+                  <h2 data-i18n="sec2h2">Proč je Itálie stabilní volbou pro investice do nemovitostí? Itálie není jen zemí umění, vína a moře. Je to také stát s hluboce zakořeněnou tradicí vlastnictví a podnikání.</h2>
               </div>
           </div>
             <div class="section3">
       <div class="sec3-info">
         <div class="serv-info">
-            <div class="serv-text">
+            <div class="serv-text" data-i18n="reg/infoh1">
                 Více o městě
             </div>  
           <div class="serv-block">
@@ -107,7 +107,7 @@ pagination:
 
             <div class="cta">
                 <a href="/anunci/{{ announcement.fileSlug }}/" class="glass-link">
-                    <button class="glass-button" id="contatButton">Zobrazit inzerát</button>
+                    <button class="glass-button" id="contatButton" data-i18n="random/but">Zobrazit inzerát</button>
                 </a>
             </div>
         </div>
@@ -117,7 +117,7 @@ pagination:
 
 
 <div class="section4">
-    <h1>Podívat se na další města</h1>
+    <h1 data-i18n="sec4h1">Podívat se na další města</h1>
     <div class="block-city" id="huck">
         {% for region in collections.regione %}
         <div class="city" style="background-image: url('{{ region.data.images }}');">
@@ -125,7 +125,7 @@ pagination:
                 <h2>{{ region.data.h1 }}</h2>
                 <h3>{{ region.data.h2 }}</h3>
                 <div class="city-but">
-                    <a href="/region/{{ region.fileSlug }}">Vybrat nemovitost</a>
+                    <a href="/region/{{ region.fileSlug }}" data-i18n="pushbut">Vybrat nemovitost</a>
                 </div>
             </div>
         </div>

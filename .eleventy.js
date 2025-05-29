@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/styles');
     eleventyConfig.addPassthroughCopy('src/script');
     eleventyConfig.addPassthroughCopy('src/foto');
+    eleventyConfig.addPassthroughCopy('src/translate_static.json');
 
         // Фильтр для преобразования пути в slug (чистый URL)
     eleventyConfig.addFilter("slugify", function (value) {

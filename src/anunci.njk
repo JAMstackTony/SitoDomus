@@ -55,7 +55,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             </div>
         <div class="cta">
             <a href="tel:+420604173506" class="glass-link">
-                <button class="glass-button">Napsat prodejci</button>
+                <button class="glass-button" data-i18n="anunci/but">Napsat prodejci</button>
             </a>
             <div class="contact">
             <a href="https://api.whatsapp.com/send?phone=420604173506">
@@ -96,7 +96,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
     </div>
     <div class="section-offer">
       <div class="random-offer">
-        <h1>Podobné nabídky</h1>
+        <h1 data-i18n="random/h1">Podobné nabídky</h1>
     <div class="random-block">
       {% set count = 0 %}
       {% for random in collections.random %}
@@ -121,7 +121,7 @@ permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
             </div>
             <div class="cta2">
                 <a href="/anunci/{{ random.fileSlug }}/" class="glass-link2">
-                  <button class="glass-button2" id="contatButton">Zobrazit inzerát</button>
+                  <button class="glass-button2" id="contatButton" data-i18n="random/but">Zobrazit inzerát</button>
                 </a>
             </div>
         </div>

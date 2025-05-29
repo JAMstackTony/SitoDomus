@@ -1,5 +1,0 @@
-Domus - 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
-(git remote set-url origin https://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@github.com/JAMstackTony/SitoDomus.git
-)
-
-git remote add origin https://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@github.com/JAMstackTony/SitoDomus.git

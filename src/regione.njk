@@ -1,48 +1,44 @@
 ---
 layout: layout.njk
-title: "Regione"
-pagination:
-    data: collections.regione
-    size: 1
-    alias: Region
-    filter: "{{ region.fileSlug }}"
-permalink: "/region/{{ Region.fileSlug }}/"
+title: "Region Detail"
+permalink: "/region/dynamic/index.html"
 ---
-
 
 <link rel="stylesheet" href="/styles/regione.css">
 <section class="hero-section">
     <div class="section-up">
-<div class="regione-block" style="background-image: url('/{{ Region.data.images[0] }}');">
+        <div class="regione-block" id="region-banner">
             <div class="regione-content">
-                <h1>{{ Region.data.h1 }}</h1>
-                <h2>{{ Region.data.h2 }}</h2>
+                <h1 id="region-h1"></h1>
+                <h2 id="region-h2"></h2>
                 <div class="city-but">
                     <a href="/property" data-i18n="regbut1">Prodej nemovitostí</a>
                 </div>
             </div>
         </div>
     </div>
-            <div class="section-cent">
-                <h1 data-i18n="reg/infoh1">Více o městě</h1>
-                <div class="sectionrow">
-                <div class="blocleft">
-                <p class="centleft">{{ Region.data.textL1 }}</p>
-                <p class="centleft">{{ Region.data.textL2 }}</p>
-                </div>
-                <div class="blocright">
-                <p class="pright">{{ Region.data.textR1 }}</p>
-                <p class="pright">{{ Region.data.textR2 }}</p> 
-                </div> 
-                </div> 
-                <div class="sectionh3">
-                    <p>{{ Region.data.h3 }}</p>
-                </div>   
-                <div class="sectiondawn">
-                <div class="dawninfo">
-                    <p>{{ Region.data.dawn1 }}</p>
-                    <p>{{ Region.data.dawn2 }}</p>
-                </div>
-                </div>  
+    <div class="section-cent">
+        <h1 data-i18n="reg/infoh1">Více o městě</h1>
+        <div class="sectionrow">
+            <div class="blocleft">
+                <p class="centleft" id="textL1"></p>
+                <p class="centleft" id="textL2"></p>
             </div>
+            <div class="blocright">
+                <p class="pright" id="textR1"></p>
+                <p class="pright" id="textR2"></p>
+            </div> 
+        </div> 
+        <div class="sectionh3">
+            <p id="h3"></p>
+        </div>   
+        <div class="sectiondawn">
+            <div class="dawninfo">
+                <p id="dawn1"></p>
+                <p id="dawn2"></p>
+            </div>
+        </div>  
+    </div>
 </section>
+
+<script src="/script/region-detail.js" defer></script>

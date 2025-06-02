@@ -40,28 +40,36 @@ pagination:
                   <h2 data-i18n="sec2h2">Proč je Itálie stabilní volbou pro investice do nemovitostí? Itálie není jen zemí umění, vína a moře. Je to také stát s hluboce zakořeněnou tradicí vlastnictví a podnikání.</h2>
               </div>
           </div>
-            <div class="section3">
-      <div class="sec3-info">
-        <div class="serv-info">
-            <div class="serv-text" data-i18n="reg/infoh1">
-                Více o městě
-            </div>  
-          <div class="serv-block">
-        {% set count = 0 %}
-        {% for service in collections.services %}
-        {% if count < 2 %}
+<div class="section3">
+  <div class="sec3-info">
+    <div class="serv-info">
+      <div class="serv-text" data-i18n="reg/infoh1">
+        Více o městě
+      </div>
+      <div class="serv-block">
         <div class="serv-block-1">
-            <!-- Заголовок и описание -->
-            <p class="serv-h1">{{ service.data.text }}</p>
-            <p class="serv-h2">{{ service.data.text2 }}</p>
+          <p class="serv-h1" data-i18n="servblock1/title">
+            Itálie není jen zemí umění, vína a moře. Je to také stát s hluboce zakořeněnou tradicí vlastnictví a podnikání. V posledních letech si udržuje stabilní zájem investorů díky své jedinečné kombinaci životního stylu, ekonomické rovnováhy a rozmanitosti regionů.
+          </p>
+          <p class="serv-h2" data-i18n="servblock1/desc">
+            Zájem o nemovitosti v Itálii roste nejen mezi Evropany, ale i ze zámoří. Důvěra v právní systém, transparentnost koupě a rostoucí podpora zahraničních investorů činí tuto zemi bezpečným přístavem pro uložení kapitálu.
+          </p>
         </div>
-            {% set count = count + 1 %}
-            {% endif %}
-            {% endfor %}
-          </div>
+
+        <div class="serv-block-1">
+          <p class="serv-h1" data-i18n="servblock2/title">
+            Ať už hledáte útulný apartmán u moře, historický dům na venkově nebo obchodní příležitost v městě — Itálie vám nabídne víc než nemovitost. Nabízí vám rovnováhu, krásu a jistotu.
+            A ti, kdo ji zastupují, chápou, že klíčem je nejen prodej, ale důvěra.
+          </p>
+          <p class="serv-h2" data-i18n="servblock2/desc">
+            Na rozdíl od spekulativních trhů nabízí Itálie něco navíc — skutečný životní styl. Nemovitost zde nekupujete jen kvůli číslům. Kupujete kus atmosféry, tradice a kvality života.
+          </p>
         </div>
       </div>
-            </div>   
+    </div>
+  </div>
+</div>
+  
 
 <div class="section-anunci">
     {% set count = 0 %}
@@ -117,24 +125,11 @@ pagination:
 
 
 <div class="section4">
-    <h1 data-i18n="sec4h1">Podívat se na další města</h1>
-    <div class="block-city" id="huck">
-        {% for region in collections.regione %}
-        <div class="city" style="background-image: url('{{ region.data.images }}');">
-            <div class="city-container">
-                <h2>{{ region.data.h1 }}</h2>
-                <h3>{{ region.data.h2 }}</h3>
-                <div class="city-but">
-                    <a href="/region/{{ region.fileSlug }}" data-i18n="pushbut">Vybrat nemovitost</a>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    <div class="carousel-dots"></div>
-    
+  <h1 data-i18n="sec4h1">Podívat se na další města</h1>
+  <div class="block-city" id="huck"></div>
+  <div class="carousel-dots"></div>
 </div>
+
      
 
           

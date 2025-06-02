@@ -94,65 +94,94 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const blockCity = document.querySelector(".block-city");
-    const cities = document.querySelectorAll(".block-city .city");
-    const dotsContainer = document.querySelector(".carousel-dots");
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('/regions_translated.json')
+    .then(response => response.json())
+    .then(data => {
+      const lang = localStorage.getItem('language') || 'cs';
+      const container = document.getElementById('huck');
+      container.innerHTML = '';
 
-    if (!blockCity || window.innerWidth > 768) return;
+      data.forEach(region => {
+        const info = region.translations?.[lang]?.h1 ? region.translations[lang] : region.original;
 
-    let currentIndex = 0;
-    let startX = 0;
-    let isDragging = false;
+        const div = document.createElement('div');
+        div.className = 'city';
+        div.style.backgroundImage = `url(${info.images[0]})`;
 
-    // Создание точек
-    dotsContainer.innerHTML = '';
-    for (let i = 0; i < cities.length; i++) {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        if (i === 0) dot.classList.add("active");
-        dotsContainer.appendChild(dot);
-    }
+        div.innerHTML = `
+          <div class="city-container">
+            <h2>${info.h1}</h2>
+            <h3>${info.h2}</h3>
+            <div class="city-but">
+              <a href="/region/dynamic/?slug=${region.slug}" data-i18n="pushbut">Vybrat nemovitost</a>
+            </div>
+          </div>
+        `;
 
-    const dots = document.querySelectorAll(".carousel-dots .dot");
+        container.appendChild(div);
+      });
 
-    function updateDots(index) {
-        dots.forEach((d, i) => {
-            d.classList.toggle("active", i === index);
-        });
-    }
-
-    blockCity.addEventListener("touchstart", e => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
-
-    blockCity.addEventListener("touchmove", e => {
-        if (!isDragging) return;
-        const moveX = e.touches[0].clientX;
-        const diff = startX - moveX;
-
-        if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-                // свайп влево
-                currentIndex = (currentIndex + 1) % cities.length;
-            } else {
-                // свайп вправо
-                currentIndex = (currentIndex - 1 + cities.length) % cities.length;
-            }
-
-            blockCity.scrollTo({
-                left: blockCity.offsetWidth * currentIndex,
-                behavior: "smooth"
-            });
-
-            updateDots(currentIndex);
-            isDragging = false;
-        }
-    });
-
-    blockCity.addEventListener("touchend", () => {
-        isDragging = false;
-    });
+      // ⬇️ запуск свайпа после рендера
+      if (window.innerWidth <= 768) initCitySwipe();
+    })
+    .catch(err => console.error('Ошибка загрузки регионов:', err));
 });
 
+// ⬇️ Вынеси свайп в отдельную функцию
+function initCitySwipe() {
+  const blockCity = document.querySelector(".block-city");
+  const cities = document.querySelectorAll(".block-city .city");
+  const dotsContainer = document.querySelector(".carousel-dots");
+
+  let currentIndex = 0;
+  let startX = 0;
+  let isDragging = false;
+
+  dotsContainer.innerHTML = '';
+  for (let i = 0; i < cities.length; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    if (i === 0) dot.classList.add("active");
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = document.querySelectorAll(".carousel-dots .dot");
+
+  function updateDots(index) {
+    dots.forEach((d, i) => {
+      d.classList.toggle("active", i === index);
+    });
+  }
+
+  blockCity.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  blockCity.addEventListener("touchmove", e => {
+    if (!isDragging) return;
+    const moveX = e.touches[0].clientX;
+    const diff = startX - moveX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        currentIndex = (currentIndex + 1) % cities.length;
+      } else {
+        currentIndex = (currentIndex - 1 + cities.length) % cities.length;
+      }
+
+      blockCity.scrollTo({
+        left: blockCity.offsetWidth * currentIndex,
+        behavior: "smooth"
+      });
+
+      updateDots(currentIndex);
+      isDragging = false;
+    }
+  });
+
+  blockCity.addEventListener("touchend", () => {
+    isDragging = false;
+  });
+}

@@ -12,7 +12,6 @@
         justify-content: flex-start; 
         position: relative; 
         background-image: url(/foto/home1.webp);
-        background-attachment: fixed;
         flex-direction: column;
     }	    
     .hero-left {
@@ -429,10 +428,8 @@
     .hero-section {
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/home2.webp);
-     
+        background-image: url(/foto/home2.webp);    
     }
-
     .hero-left {
         margin: 6vh;
         display: flex;
@@ -440,7 +437,6 @@
         align-items: center; 
         transition: opacity 0.5s ease;
     }
-
     .hero-info {  
         margin-left: 0 !important;
         justify-content: center;
@@ -453,14 +449,12 @@
         color: #FFF;
         font-size: 2.5rem;
     }     
-
     .hero-info h2 {
         margin-top: 3.2vh;
         color: #FFF;
         font-size: 1.25rem;
         font-weight: 100;
     } 
-
     .hero-info a {
         color: #0097B2;
     }     
@@ -479,7 +473,6 @@
     .hero-h3 h3::before {
         display: none;
     }   
-
     .hero-but {
         justify-content: flex-start;
         margin: 6vh auto 0 auto;
@@ -499,7 +492,6 @@
     .hero-but1 {
         width: 100%;
     }   
-
     .hero-but1 a {
         width: 100%;
         box-sizing: border-box;
@@ -519,11 +511,9 @@
         background-color: #416ECB;
         color: #FFF;
     }   
-   
     .hero-but2 {
         width: 100%;
     }
-
     .hero-but2 a {
         display: block;        
         width: 100%;
@@ -538,7 +528,6 @@
     .hero-but2 a:hover {
         background-color: #416ECB;
     }
-
     .section1 {
         position: relative;
         height: 80vh;
@@ -566,7 +555,6 @@
         padding: 10px;
         font-weight: 100;
     } 
-
     .section3 {
         justify-content: center;
         display: flex;
@@ -612,7 +600,6 @@
         margin-top: 3.2vh;  
         font-size: 0.9375rem;
     }
-
     .mobile-hide {
         display: none !important;
     }
@@ -625,7 +612,6 @@
         margin-top: 4.8vh; /* Отступ сверху */
         border-bottom: 2px solid #416ECB;
     }
-
           /* Стиль для каждого блока объявления */
     .bottom-block {
         width: 100%; /* Три блока в ряд с учётом отступов */
@@ -758,4 +744,17 @@
   }
 
 
-}        
+}  
+
+
+@supports (-webkit-touch-callout: none) {
+  .hero-section {
+    background-attachment: scroll !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url(/foto/home2.webp) !important;
+  }
+}
+      

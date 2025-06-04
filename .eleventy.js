@@ -15,12 +15,7 @@ module.exports = function (eleventyConfig) {
         // Создаем коллекцию для _announcements
     eleventyConfig.addCollection('announcements', function (collectionApi) {
         return collectionApi.getFilteredByGlob('./src/_announcements/*.md')
-    });
-
-    // Создаем коллекцию для services
-    eleventyConfig.addCollection('services', function (collectionApi) {
-        return collectionApi.getFilteredByGlob('./src/_announcements2/*.md');
-    });   
+    }); 
 
     // Создаем коллекцию для faq
     eleventyConfig.addCollection('faqcol', function (collectionApi) {

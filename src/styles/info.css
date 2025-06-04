@@ -21,7 +21,7 @@
         left: 0;
         width: 100%; /* Занимает левую половину блока */
         height: 100%; /* Полная высота блока */
-        background-color: rgba(0, 0, 0, 0.3); /* Чёрный цвет с прозрачностью 50% */
+        background-color: rgba(0, 0, 0, 0.4); /* Чёрный цвет с прозрачностью 50% */
         z-index: 1; /* Размещаем затемнение поверх фона */
     }	
     .block-left {
@@ -55,8 +55,8 @@
     }
     .left-cont h1 {
     	color: #FFF;
-    	margin-top: 11.2vh;
-    	margin-bottom: 3.2vh;
+    	margin-top: 2vh;
+    	margin-bottom: 1vh;
     	font-size: 1.875rem;
     }       
     .left-cont a {
@@ -140,6 +140,12 @@
 @media screen and (max-width: 768px) {
 
 
+    .hero-section {
+      height: auto;
+      padding-bottom: 0;
+    }
+
+
     .block-left {
         justify-content: center;
         align-items: center;
@@ -159,12 +165,17 @@
     }
 
     .left-cont {
-        background-color: #2B3641;
-        height: 40vh;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        background-color: #2B3641;
         text-align: center;
-        justify-content: center;
+        gap: 4vh;
     }
+    .left-cont .contact:last-child {
+        padding-bottom: 5vh;
+    }
+
 
     .left-cont h1 {
         padding: 6vh 0px 3.2vh 0px;
@@ -174,7 +185,7 @@
 
     .contact {
         width: 70%;
-        margin: 2.5vh auto 0 auto;
+        margin: 0 auto;
     }
 
 

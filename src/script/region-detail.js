@@ -1,27 +1,73 @@
-document.addEventListener("DOMContentLoaded", () => {
+let currentRegionSlug = null;
+let allRegionsData = null;
+
+// 🔁 Рендерим контент региона по текущему языку
+async function renderRegionDetail(lang) {
+  const region = allRegionsData.find(r => r.slug === currentRegionSlug);
+  if (!region) return;
+
+  const langData = region.translations?.[lang] || region.original;
+  const img = langData.images?.[0] || region.original?.images?.[0] || "foto/default.webp";
+
+  const regionContainer = document.getElementById("region-container");
+  if (!regionContainer) return;
+
+  regionContainer.innerHTML = `
+    <div class="section-up">
+      <div class="regione-block" style="background-image: url('/${img}');">
+        <div class="regione-content">
+          <h1>${langData.h1 || ""}</h1>
+          <h2>${langData.h2 || ""}</h2>
+          <div class="city-but">
+            <a href="/property" data-i18n="regbut1">Prodej nemovitostí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cent">
+      <h1 data-i18n="reg/infoh1">Více o městě</h1>
+      <div class="sectionrow">
+        <div class="blocleft">
+          <p class="centleft">${langData.textL1 || ""}</p>
+          <p class="centleft">${langData.textL2 || ""}</p>
+        </div>
+        <div class="blocright">
+          <p class="pright">${langData.textR1 || ""}</p>
+          <p class="pright">${langData.textR2 || ""}</p>
+        </div>
+      </div>
+      <div class="sectionh3">
+        <p>${langData.h3 || ""}</p>
+      </div>
+      <div class="sectiondawn">
+        <div class="dawninfo">
+          <p>${langData.dawn1 || ""}</p>
+          <p>${langData.dawn2 || ""}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 🧠 Инициализация страницы — загрузка JSON, установка slug
+async function initRegionDetailPage() {
   const urlParams = new URLSearchParams(window.location.search);
-  const slug = urlParams.get("slug");
+  currentRegionSlug = urlParams.get("slug");
+  if (!currentRegionSlug) return;
 
-  fetch('/regions_translated.json')
-    .then(res => res.json())
-    .then(data => {
-      const lang = localStorage.getItem('language') || 'cs';
-      const region = data.find(r => r.slug === slug);
+  const response = await fetch("/regions_translated.json");
+  allRegionsData = await response.json();
 
-      if (!region) return console.error('Регион не найден:', slug);
+  await renderRegionDetail(window.currentLang);
+}
 
-      const content = region.translations?.[lang]?.h1 ? region.translations[lang] : region.original;
+document.addEventListener("DOMContentLoaded", async () => {
+  // 1. Сначала определяем язык
+  window.currentLang = localStorage.getItem("lang") || "cs";
 
-      document.getElementById("region-h1").textContent = content.h1;
-      document.getElementById("region-h2").textContent = content.h2;
-      document.getElementById("textL1").textContent = content.textL1;
-      document.getElementById("textL2").textContent = content.textL2;
-      document.getElementById("textR1").textContent = content.textR1;
-      document.getElementById("textR2").textContent = content.textR2;
-      document.getElementById("h3").textContent = content.h3;
-      document.getElementById("dawn1").textContent = content.dawn1;
-      document.getElementById("dawn2").textContent = content.dawn2;
+  // 2. Затем загружаем данные и рендерим
+  await initRegionDetailPage();
 
-      document.getElementById("region-banner").style.backgroundImage = `url(/${content.images[0]})`;
-    });
 });
+

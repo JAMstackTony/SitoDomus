@@ -71,12 +71,30 @@ function loadAndApplyTranslations(lang) {
 // Применяем язык при загрузке
 document.addEventListener('DOMContentLoaded', function () {
   const lang = localStorage.getItem('lang') || 'cs';
+  window.currentLang = localStorage.getItem('lang') || 'cs';
   loadAndApplyTranslations(lang);
 });
 
-// Слушаем переключение языка
+// === Слушаем переключение языка ===
 document.getElementById('lang-switcher')?.addEventListener('change', function (e) {
   const lang = e.target.value;
   localStorage.setItem('lang', lang);
+  window.currentLang = lang;
   loadAndApplyTranslations(lang);
+
+  // 👉 добавляем проверку, есть ли функция renderRegionDetail
+  if (typeof renderRegionDetail === 'function') {
+    renderRegionDetail(lang); // ререндерим регион
+  }
+
+  // 👉 если есть другие страницы с renderBlogDetail и т.п.
+  if (typeof renderBlogDetail === 'function') {
+    renderBlogDetail(lang);
+  }
+
+  // 👉 если есть другие страницы с renderPage (например блог листинг)
+  if (typeof renderPage === 'function') {
+    renderPage(lang);
+  }
 });
+

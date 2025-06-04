@@ -8,7 +8,6 @@
         background-size: cover;
         height: 115vh;
         background-repeat: no-repeat;
-        transition: background-image 0.5s ease;
         display: flex;
         justify-content: flex-start; 
         position: relative; 
@@ -428,17 +427,11 @@
 @media screen and (max-width: 768px) {
 
     .hero-section {
-        justify-content: flex-start;
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/home10.webp);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex; 
-        position: relative; 
-        background-attachment: fixed;      
-    } 
+        background-image: url(/foto/home2.webp);
+     
+    }
 
     .hero-left {
         margin: 6vh;

@@ -428,9 +428,22 @@
     .hero-section {
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/home2.webp);    
+        background-image: url(/foto/home11.webp);    
     }
+
+    .hero-section::before {
+        content: ""; /* Обязательно для псевдоэлемента */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Занимает левую половину блока */
+        height: 100%; /* Полная высота блока */
+        background-color: rgba(0, 0, 0, 0.3); /* Чёрный цвет с прозрачностью 50% */
+        z-index: 1; /* Размещаем затемнение поверх фона */
+    }
+
     .hero-left {
+        z-index: 3;
         margin: 6vh;
         display: flex;
         flex-direction: column; 
@@ -474,6 +487,7 @@
         display: none;
     }   
     .hero-but {
+        z-index: 3;
         justify-content: flex-start;
         margin: 6vh auto 0 auto;
         align-items: center;

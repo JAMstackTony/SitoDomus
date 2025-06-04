@@ -3,20 +3,14 @@ title: fAQ
 layout: layout.njk
 ---
 
-        <link rel="stylesheet" href="/styles/faq.css">
-        <script>
-            window.Faq = {{ collections.faqcol | safe }};
-        </script>
+<link rel="stylesheet" href="/styles/faq.css">
 <section class="hero-section">
-    <div class="prev">
-    	<h1 data-i18n="faq/h1">Často kladené otázky (FAQ)</h1>
-    </div>
-    <div class="content">
-        {% for faq in collections.faqcol %}
-        <details class="faq-item">
-            <summary class="faq-question">{{ faq.data.h1 }}</summary>
-            <p class="faq-answer">{{ faq.data.h2 }}</p>
-        </details>
-        {% endfor %}
-    </div>
+  <div class="prev">
+    <h1 data-i18n="faq/h1">Často kladené otázky (FAQ)</h1>
+  </div>
+  <div class="content" id="faq-container"></div>
+    <!-- Сюда будет вставлен FAQ -->
+  </div>
 </section>
+
+<script src="/script/faq-detail.js"></script>

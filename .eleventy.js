@@ -5,6 +5,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/foto');
     eleventyConfig.addPassthroughCopy('src/translate_static.json');
     eleventyConfig.addPassthroughCopy('src/regions_translated.json');
+    eleventyConfig.addPassthroughCopy('src/faq_translated.json');
+
 
         // Фильтр для преобразования пути в slug (чистый URL)
     eleventyConfig.addFilter("slugify", function (value) {
@@ -15,11 +17,6 @@ module.exports = function (eleventyConfig) {
         // Создаем коллекцию для _announcements
     eleventyConfig.addCollection('announcements', function (collectionApi) {
         return collectionApi.getFilteredByGlob('./src/_announcements/*.md')
-    }); 
-
-    // Создаем коллекцию для faq
-    eleventyConfig.addCollection('faqcol', function (collectionApi) {
-        return collectionApi.getFilteredByGlob('./src/_announcements4/*.md');
     });    
 
         // Создаем коллекцию для rent

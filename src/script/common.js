@@ -96,5 +96,9 @@ document.getElementById('lang-switcher')?.addEventListener('change', function (e
   if (typeof renderPage === 'function') {
     renderPage(lang);
   }
+
+if (typeof renderFaq === 'function') {
+  renderFaq(lang);
+}
 });
 

@@ -1,134 +1,80 @@
 let isScrolling = false;
 
 window.addEventListener('scroll', function () {
-    if (!isScrolling) {
-        isScrolling = true;
-        requestAnimationFrame(() => {
-            handleScroll();
-            isScrolling = false;
-        });
-    }
+  if (!isScrolling) {
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      handleScroll();
+      isScrolling = false;
+    });
+  }
 });
 
 function handleScroll() {
-    const heroSection = document.querySelector('.hero-section');
-    if (!heroSection) return;
+  const heroSection = document.querySelector('.hero-section');
+  if (!heroSection) return;
 
-    if (window.scrollY > 400) {
-        heroSection.classList.add('scrolled');
-    } else {
-        heroSection.classList.remove('scrolled');
-    }
+  if (window.scrollY > 400) {
+    heroSection.classList.add('scrolled');
+  } else {
+    heroSection.classList.remove('scrolled');
+  }
 
-const section2 = document.querySelector('.section1');
-if (!section2) return;
+  const section2 = document.querySelector('.section1');
+  if (!section2) return;
 
-const sectionTop = section2.getBoundingClientRect().top;
-const offset = window.innerHeight * 0.5; // Начинаем показывать, когда блок находится на половине экрана
-let scrollProgress = 1 - Math.min(1, Math.max(0, (sectionTop - offset) / window.innerHeight));
+  const sectionTop = section2.getBoundingClientRect().top;
+  const offset = window.innerHeight * 0.5;
+  let scrollProgress = 1 - Math.min(1, Math.max(0, (sectionTop - offset) / window.innerHeight));
 
-section2.style.opacity = scrollProgress;
+  section2.style.opacity = scrollProgress;
 }
 
-
-// Карусель изображений с поддержкой свайпов
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselContainers = document.querySelectorAll('.carousel-container');
-
-    carouselContainers.forEach((container) => {
-        const images = container.querySelectorAll('.carousel-image');
-        const prevButton = container.querySelector('.carousel-btn.prev');
-        const nextButton = container.querySelector('.carousel-btn.next');
-
-        if (!prevButton || !nextButton || images.length === 0) {
-            console.warn('Карусель не настроена для контейнера:', container);
-            return;
-        }
-
-        let currentIndex = 0;
-        let startX = 0;
-        let endX = 0;
-
-        function updateCarousel(index) {
-            images.forEach((image, i) => {
-                image.classList.toggle('active', i === index);
-            });
-        }
-
-        // Листаем влево
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateCarousel(currentIndex);
-        });
-
-        // Листаем вправо
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateCarousel(currentIndex);
-        });
-
-        // Добавляем обработку свайпов для мобильных устройств
-        container.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-
-        container.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        });
-
-        container.addEventListener('touchend', () => {
-            let swipeThreshold = 50; // Минимальная длина свайпа для срабатывания
-            if (startX - endX > swipeThreshold) {
-                // Свайп влево
-                currentIndex = (currentIndex + 1) % images.length;
-            } else if (endX - startX > swipeThreshold) {
-                // Свайп вправо
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-            }
-            updateCarousel(currentIndex);
-        });
-
-        // Инициализация первой картинки
-        updateCarousel(0);
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
+// 👉 Рендерим регионы по текущему языку
+function renderRegions(lang) {
   fetch('/regions_translated.json')
     .then(response => response.json())
     .then(data => {
-      const lang = localStorage.getItem('language') || 'cs';
       const container = document.getElementById('huck');
+      if (!container) return;
       container.innerHTML = '';
 
-      data.forEach(region => {
-        const info = region.translations?.[lang]?.h1 ? region.translations[lang] : region.original;
+data.forEach(region => {
+  const langData = region.translations?.[lang] || region.original;
+  const img = langData.images?.[0] || region.original?.images?.[0] || "foto/default.webp";
 
-        const div = document.createElement('div');
-        div.className = 'city';
-        div.style.backgroundImage = `url(${info.images[0]})`;
+  const div = document.createElement('div');
+  div.className = 'city';
+  div.style.backgroundImage = `url(${img})`;
 
-        div.innerHTML = `
-          <div class="city-container">
-            <h2>${info.h1}</h2>
-            <h3>${info.h2}</h3>
-            <div class="city-but">
-              <a href="/region/dynamic/?slug=${region.slug}" data-i18n="pushbut">Vybrat nemovitost</a>
-            </div>
-          </div>
-        `;
+  div.innerHTML = `
+    <div class="city-container">
+      <h2>${langData.h1 || ""}</h2>
+      <h3>${langData.h2 || ""}</h3>
+      <div class="city-but">
+        <a href="/region/dynamic/?slug=${region.slug}" data-i18n="pushbut">Vybrat nemovitost</a>
+      </div>
+    </div>
+  `;
 
-        container.appendChild(div);
-      });
-
-      // ⬇️ запуск свайпа после рендера
-      if (window.innerWidth <= 768) initCitySwipe();
-    })
-    .catch(err => console.error('Ошибка загрузки регионов:', err));
+  container.appendChild(div);
 });
 
-// ⬇️ Вынеси свайп в отдельную функцию
+
+      if (window.innerWidth <= 768) initCitySwipe();
+
+      // ⬅️ Применяем переводы после рендера
+      loadAndApplyTranslations(lang);
+    })
+    .catch(err => console.error('❌ Ошибка загрузки регионов:', err));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("lang") || "cs";
+  renderRegions(lang);
+});
+
+// ⬇️ свайп для мобильных
 function initCitySwipe() {
   const blockCity = document.querySelector(".block-city");
   const cities = document.querySelectorAll(".block-city .city");

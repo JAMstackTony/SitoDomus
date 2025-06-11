@@ -100,5 +100,10 @@ document.getElementById('lang-switcher')?.addEventListener('change', function (e
 if (typeof renderFaq === 'function') {
   renderFaq(lang);
 }
+
+if (typeof renderRegions === 'function') {
+  renderRegions(lang);
+}
+
 });
 

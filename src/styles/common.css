@@ -39,7 +39,7 @@
         margin-right: auto;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #4FC3F7;
+        color: #0060e6;
         text-decoration: none;
     }
 
@@ -144,7 +144,7 @@
 
         .language-selector select:focus {
             outline: none;
-            border-color: #29A3E2;
+            border-color: #0060e6;
             box-shadow: 0 0 0 2px rgba(41, 163, 226, 0.3);
         }
 
@@ -249,7 +249,7 @@
 .burger-menu div {
     width: 100%;
     height: 4px;
-    background:  #4FC3F7;
+    background:  #0060e6;
     transition: 0.3s ease;
 }
 
@@ -297,7 +297,7 @@
 
 .mobile-nav li a {
     align-items: right;
-    color:  #4FC3F7;
+    color:  #0060e6;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;

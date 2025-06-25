@@ -1,136 +1,103 @@
 ---
 layout: layout.njk
-pagination:
-    data: collections.announcements
-    size: 1
-    alias: announcement
-permalink: "/anunci/{{ announcement.fileSlug }}/index.html"
+permalink: "/anunci/dynamic/index.html"
 ---
-
-<link rel="stylesheet" href="/styles/anunci.css">
-
-<script>
-  window.Random = {{ collections.random | safe }};
-</script>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail inzerátu</title>
+  <link rel="stylesheet" href="/styles/anunci.css">
+</head>
+<body>
 
 <section class="property-page">
-    <!-- Карусель изображений -->
-<div class="carousel-container">
-{% set images = announcement.data.images %}
-<div class="carousel-images">
-  {% for image in images %}
-    <img loading="lazy"
-         src="/{{ image.src | urlencode }}"
-         alt="{{ image.alt or 'Property Image' }}"
-         class="carousel-image {% if loop.index0 == 0 %}active{% endif %}">
-  {% endfor %}
-</div>
-        <button class="carousel-btn prev">
-        <svg class="back-arrow" width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">  
-        <path d="M30.0234 49.2188L12.3047 31.5L30.0234 13.7813M14.7656 31.5L50.6953 31.5" stroke="#CEE0FF" stroke-width="6"stroke-miterlimit="10" stroke-linecap="square"/>
-        </svg>
-        </button>
-        <button class="carousel-btn next">
-        <svg class="next-arrow" width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">  
+  <!-- КАРУСЕЛЬ ИЗОБРАЖЕНИЙ -->
+  <div class="carousel-container">
+    <div class="carousel-images" id="carouselImages">
+      <!-- Изображения будут добавлены динамически -->
+    </div>
+    <button class="carousel-btn prev">
+      <svg width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.0234 49.2188L12.3047 31.5L30.0234 13.7813M14.7656 31.5L50.6953 31.5" stroke="#CEE0FF" stroke-width="6" stroke-miterlimit="10" stroke-linecap="square"/>
+      </svg>
+    </button>
+    <button class="carousel-btn next">
+      <svg width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M32.9766 13.7812L50.6953 31.5L32.9766 49.2188M48.2344 31.5H12.3047" stroke="#CEE0FF" stroke-width="6" stroke-miterlimit="10" stroke-linecap="square"/>
-        </svg>
-        </button>
-</div>
-    <!-- Синий блок с информацией -->
-    <div class="blue-block">
-        <div class="blue-block-content">
-            <div class="return">
-            <a href="/property/" class="back-button">
-            <svg class="back-arrow" width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30.0234 49.2188L12.3047 31.5L30.0234 13.7813M14.7656 31.5L50.6953 31.5" stroke="#CEE0FF" stroke-width="6"        stroke-miterlimit="10" stroke-linecap="square"/>
-            </svg>
-            </a>
-            <div class="price">{{ announcement.data.prezzo }} 
-            <div class="details">
-                <span>{{ announcement.data.nomeAnunci }}</span>
-                <span>{{ announcement.data.street1 }}</span>
-                <span>{{ announcement.data.zonam2 }}</span>
-            </div>
-            </div>
-            </div>
-        <div class="cta">
-            <a href="tel:+420604173506" class="glass-link">
-                <button class="glass-button" data-i18n="anunci/but">Napsat prodejci</button>
-            </a>
-            <div class="contact">
-            <a href="https://api.whatsapp.com/send?phone=420604173506">
-                <img src="/foto/icon/whats.svg">
-            </a>
-            </div>
-        </div>
-        </div>
-    </div>
+      </svg>
+    </button>
+  </div>
 
-    <div class="section-info">
-        <div class="info-prev">
-                <span>{{ announcement.data.nomeAnunci }}</span>
-                <span>{{ announcement.data.street1 }}</span>
+  <!-- СИНИЙ БЛОК С ИНФОРМАЦИЕЙ -->
+  <div class="blue-block">
+    <div class="blue-block-content">
+      <div class="return">
+        <a href="/property/" class="back-button">
+          <svg width="32" height="32" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.0234 49.2188L12.3047 31.5L30.0234 13.7813M14.7656 31.5L50.6953 31.5" stroke="#CEE0FF" stroke-width="6" stroke-miterlimit="10" stroke-linecap="square"/>
+          </svg>
+        </a>
+        <div class="price" id="upPrezzo"></div>
+        <div class="details">
+          <span id="upNomeAnunci"></span>
+          <span id="upVia"></span>
+          <span id="upZonaM2"></span>
         </div>
-        <div class="sec-info1">
-            <span>{{ announcement.data.text }}</span>
+      </div>
+      <div class="cta">
+        <a href="tel:+420604173506" class="glass-link">
+          <button class="glass-button" data-i18n="anunci/but">Napsat prodejci</button>
+        </a>
+        <div class="contact">
+          <a href="https://api.whatsapp.com/send?phone=420604173506">
+            <img src="/foto/icon/whats.svg" alt="WhatsApp">
+          </a>
         </div>
-        <div class="sec-info2">
-            <h1>Hlavní charakteristiky</h1>
-            <span>{{ announcement.data.textInfo }}</span>
-        </div>
-        <div class="sec-info3">
-            <span>{{ announcement.data.textInfo1 }}</span>
-        </div>
-        <div class="sec-info3">
-            <span>{{ announcement.data.textInfo2 }}</span>
-        </div>
-        <div class="sec-info3">
-            <span>{{ announcement.data.textInfo3 }}</span>
-        </div>
-        <div class="sec-info3">
-            <span>{{ announcement.data.textInfo4 }}</span>
-        </div>
-        <div class="sec-info3">
-            <span>{{ announcement.data.textInfo5 }}</span>
-        </div>                                
-    </div>
-    <div class="section-offer">
-      <div class="random-offer">
-        <h1 data-i18n="random/h1">Podobné nabídky</h1>
-    <div class="random-block">
-      {% set count = 0 %}
-      {% for random in collections.random %}
-        {% if count < 3 %}
-        <div class="bottom-block" data-id="{{ random.data.riferimento }}" data-riferimento="{{ random.data.riferimento }}" data-city="{{ random.data.city1 }}" data-zona="{{ random.data.nomeZona }}" data-tipo="{{ random.data.tipo }}">
-            <div class="carousel-container2">
-            {% if random.data.images and random.data.images.length > 0 %}
-            <img
-                loading="lazy"
-                src="/{{ random.data.images[0].src | urlencode }}"
-                alt="{{ random.data.images[0].alt or 'Property Image' }}"
-                class="carousel-image2">
-            {% endif %}
-            </div>
-            <a class="info-block1" href="/anunci/{{ random.fileSlug }}/">
-                <div class="info-anunci">{{ random.data.nomeAnunci }}</div>
-            </a>
-            <div class="price2">
-                <a class="euro" href="/anunci/{{ random.fileSlug }}/">{{ random.data.prezzo }} €</a>
-                <a class="euro1" href="/anunci/{{ random.fileSlug }}/">{{ random.data.prezzosconto }}</a>
-                <a class="rif" href="/anunci/{{ random.fileSlug }}/">RIF {{ random.data.riferimento }}</a>
-            </div>
-            <div class="cta2">
-                <a href="/anunci/{{ random.fileSlug }}/" class="glass-link2">
-                  <button class="glass-button2" id="contatButton" data-i18n="random/but">Zobrazit inzerát</button>
-                </a>
-            </div>
-        </div>
-        {% set count = count + 1 %}
-        {% endif %}
-      {% endfor %}
-    </div>
       </div>
     </div>
+  </div>
+
+  <!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
+  <div class="section-info">
+    <div class="info-prev">
+      <span id="upNomeAnunciSmall"></span>
+      <span id="upViaSmall"></span>
+    </div>
+    <div class="sec-info1">
+      <span id="textInfo"></span>
+    </div>
+    <div class="sec-info2">
+      <h1 data-i18n="anunci/h1">Hlavní charakteristiky</h1>
+      <span id="textInfoBlock"></span>
+    </div>
+    <div class="sec-info3">
+      <span id="textInfo1"></span>
+    </div>
+    <div class="sec-info3">
+      <span id="textInfo2"></span>
+    </div>
+    <div class="sec-info3">
+      <span id="textInfo3"></span>
+    </div>
+    <div class="sec-info3">
+      <span id="textInfo4"></span>
+    </div>
+    <div class="sec-info3">
+      <span id="textInfo5"></span>
+    </div>
+  </div>
+
+  <!-- ПОХОЖИЕ ОБЪЯВЛЕНИЯ -->
+  <div class="section-offer">
+    <h1 data-i18n="random/h1">Podobné nabídky</h1>
+    <div class="random-block" id="randomOffers">
+      <!-- Здесь будут случайные объявления -->
+    </div>
+  </div>
+
 </section>
 
-<script src="/script/anunci.js"></script>
+<script type="module" src="/script/anunci.js"></script>
+</body>
+</html>

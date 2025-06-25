@@ -1,0 +1,504 @@
+[
+  {
+    "slug": "901",
+    "original": {
+      "nomeAnunci": "Apartman 3+kk - Scalea, Kalabrie",
+      "nomeZona": "",
+      "city1": "Scalea",
+      "street1": "",
+      "prezzo1": "",
+      "tipo": "Apartman",
+      "elevator": "",
+      "terrazzo": "Ano",
+      "prezzo": "",
+      "text": "Hledáte ideální místo pro dovolenou nebo dlouhodobý pobyt? Tento apartmán je přesně to, co potřebujete!",
+      "textInfo": "Prostorný apartmán s dvěma velkými balkony, Pouhých 600 m od pláže, Parkování k dispozici, 5 minut pěšky od vlakového nádraží, 300 m od Intersparu a dalších obchodů, Maximální kapacita: 5 osob, Tichá lokalita v centru města, ideální pro klidný pobyt s výbornou dostupností! ",
+      "textInfo1": "",
+      "textInfo2": "",
+      "textInfo3": "",
+      "textInfo4": "",
+      "textInfo5": "",
+      "images": [
+        {
+          "src": "foto/Galeri/rif-901 (12).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (9).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (5).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (4).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (1).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (6).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (7).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (8).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (2).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (10).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (11).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (3).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (13).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (14).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (15).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-901 (16).webp"
+        }
+      ]
+    },
+    "translations": {
+      "en": {
+        "nomeAnunci": "Apartment 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Apartment",
+        "elevator": "",
+        "terrazzo": "Yet",
+        "prezzo": "",
+        "text": "Looking for an ideal place for holiday or long -term stay? This apartment is exactly what you need!",
+        "textInfo": "Spacious apartment with two large balconies, just 600 m from the beach, parking available, 5 minutes walk from the train station, 300 m from Interspar and other shops, maximum capacity: 5 persons, quiet location in the city center, ideal for a quiet stay with excellent access!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "ru": {
+        "nomeAnunci": "Квартира 3+KK - Скалея, Калабрия",
+        "nomeZona": "",
+        "city1": "Скалеа",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Квартира",
+        "elevator": "",
+        "terrazzo": "Еще",
+        "prezzo": "",
+        "text": "Ищете идеальное место для отдыха или долгосрочного пребывания? Эта квартира именно то, что вам нужно!",
+        "textInfo": "Просторная квартира с двумя большими балконами, всего в 600 м от пляжа, парковка, в 5 минутах ходьбы от железнодорожного вокзала, в 300 м от межпарка и других магазинов, максимальная вместимость: 5 человек, тихое место в центре города, идеально подходит для тихого пребывания с отличным доступом!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "lt": {
+        "nomeAnunci": "3 butas+kK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Butas",
+        "elevator": "",
+        "terrazzo": "Vis dėlto",
+        "prezzo": "",
+        "text": "Ieškai idealios vietos atostogoms ar ilgametėje viešnagėje? Šis butas yra būtent tai, ko jums reikia!",
+        "textInfo": "Erdvus butas su dviem dideliais balkonais, vos už 600 m nuo paplūdimio, galima įsigyti automobilių stovėjimo aikštelę, 5 minutes pėsčiomis nuo traukinių stoties, 300 m atstumu nuo „Interspar“ ir kitų parduotuvių, maksimali talpa: 5 žmonės, rami vieta miesto centre, idealiai tinka ramiam viešnagei su puikia prieiga!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "lv": {
+        "nomeAnunci": "Dzīvoklis 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Dzīvoklis",
+        "elevator": "",
+        "terrazzo": "Tomēr",
+        "prezzo": "",
+        "text": "Looking for an ideal place for holiday or long -term stay? Šis dzīvoklis ir tieši tas, kas jums nepieciešams!",
+        "textInfo": "Plašs dzīvoklis ar diviem lieliem balkoniem, tikai 600 m attālumā no pludmales, ir pieejama autostāvvieta, 5 minūšu gājiena attālumā no dzelzceļa stacijas, 300 m no starpsparām un citiem veikaliem, maksimālā ietilpība: 5 personas, klusa vieta pilsētas centrā, ideāli piemērota klusai uzturēšanai ar lielisku piekļuvi!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "pl": {
+        "nomeAnunci": "Mieszkanie 3+KK - SCALEA, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Apartament",
+        "elevator": "",
+        "terrazzo": "Już",
+        "prezzo": "",
+        "text": "Szukasz idealnego miejsca na wakacje lub długoterminowe pobyty? To mieszkanie jest dokładnie tym, czego potrzebujesz!",
+        "textInfo": "Przestronny apartament z dwoma dużymi balkonami, zaledwie 600 m od plaży, dostępny parking, 5 minut spacerem od dworca kolejowego, 300 m od InterSpar i innych sklepów, maksymalna pojemność: 5 osób, cicha lokalizacja w centrum miasta, idealne na cichy pobyt z doskonałym dostępem!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "fi": {
+        "nomeAnunci": "Huoneisto 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Huoneisto",
+        "elevator": "",
+        "terrazzo": "Vielä",
+        "prezzo": "",
+        "text": "Etsitkö ihanteellista paikkaa loma- tai pitkän aikavälin oleskeluun? Tämä huoneisto on juuri sitä mitä tarvitset!",
+        "textInfo": "Tilava huoneisto, jossa on kaksi suurta parveketta, vain 600 metrin päässä rannalta, pysäköinti saatavilla, 5 minuutin kävelymatkan päässä rautatieasemalta, 300 metrin päässä Intersparista ja muista kaupoista, maksimikapasiteetti: 5 ihmistä, hiljainen sijainti keskustassa, ihanteellinen hiljaiseen oleskeluun erinomaisella pääsyllä!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "it": {
+        "nomeAnunci": "Appartamento 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Appartamento",
+        "elevator": "",
+        "terrazzo": "Ancora",
+        "prezzo": "",
+        "text": "Cerchi un luogo ideale per le vacanze o il soggiorno a lungo termine? Questo appartamento è esattamente ciò di cui hai bisogno!",
+        "textInfo": "Spazioso appartamento con due grandi balconi, a soli 600 m dalla spiaggia, parcheggio disponibile, 5 minuti a piedi dalla stazione ferroviaria, a 300 m da Interspar e altri negozi, capacità massima: 5 persone, posizione tranquilla nel centro della città, ideale per un soggiorno tranquillo con un accesso eccellente!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "de": {
+        "nomeAnunci": "Wohnung 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Wohnung",
+        "elevator": "",
+        "terrazzo": "Noch",
+        "prezzo": "",
+        "text": "Suchen Sie nach einem idealen Ort für Urlaub oder langfristig? Diese Wohnung ist genau das, was Sie brauchen!",
+        "textInfo": "Geräumige Wohnung mit zwei großen Balkonen, nur 600 m vom Strand entfernt, Parkplätze, 5 Minuten zu Fuß vom Bahnhof entfernt, 300 m von Interspar und anderen Geschäften entfernt, maximale Kapazitäten: 5 Personen, ruhige Lage im Stadtzentrum, ideal für einen ruhigen Aufenthalt mit hervorragendem Zugang!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "sl": {
+        "nomeAnunci": "Apartma 3+KK - Scalia, Kalabria",
+        "nomeZona": "",
+        "city1": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Stanovanje",
+        "elevator": "",
+        "terrazzo": "Še",
+        "prezzo": "",
+        "text": "Iščete idealen kraj za počitniško ali dolgotrajno bivanje? To stanovanje je točno tisto, kar potrebujete!",
+        "textInfo": "Prostorno stanovanje z dvema velikima balkonima, le 600 m od plaže, na voljo parkirišče, 5 minut hoje od železniške postaje, 300 m od Interspar in drugih trgovin, največja zmogljivost: 5 oseb, mirna lokacija v središču mesta, idealna za miren bivanje z odličnim dostopom!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "no": {
+        "nomeAnunci": "Leilighet 3+KK - Scalea, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Leilighet",
+        "elevator": "",
+        "terrazzo": "Ennå",
+        "prezzo": "",
+        "text": "Leter du etter et ideelt sted for ferie eller langvarig opphold? Denne leiligheten er akkurat det du trenger!",
+        "textInfo": "Romslig leilighet med to store balkonger, bare 600 m fra stranden, parkering tilgjengelig, 5 minutters gange fra jernbanestasjonen, 300 m fra Interspar og andre butikker, maksimal kapasitet: 5 personer, stille beliggenhet i sentrum, ideell for et rolig opphold med utmerket tilgang!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      }
+    }
+  },
+  {
+    "slug": "902",
+    "original": {
+      "nomeAnunci": "Apartmán 3+kk – Scalea, Kalábrie",
+      "nomeZona": "",
+      "city1": "Scalea",
+      "street1": "",
+      "prezzo1": "",
+      "tipo": "Apartman",
+      "elevator": "",
+      "terrazzo": "Ano",
+      "prezzo": "",
+      "text": "Zrekonstruovaný a prostorný apartmán v oblíbeném přímořském městečku Scalea!",
+      "textInfo": "Velký apartmán se dvěma balkony, Pouze 400 m od pláže – pár minut pěšky, Soukromé parkování k dispozici, Obchod s potravinami 300 m od domu, Maximální kapacita: 7 osob, Klidná lokalita, ideální pro odpočinek – a přitom vše na dosah!",
+      "textInfo1": "",
+      "textInfo2": "",
+      "textInfo3": "",
+      "textInfo4": "",
+      "textInfo5": "",
+      "images": [
+        {
+          "src": "foto/Galeri/rif-902 (5).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (1).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (3).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (4).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (2).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (6).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (7).webp"
+        },
+        {
+          "src": "foto/Galeri/rif-902 (8).webp"
+        }
+      ]
+    },
+    "translations": {
+      "en": {
+        "nomeAnunci": "Apartment 3+KK - Scalea, Calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Apartment",
+        "elevator": "",
+        "terrazzo": "Yet",
+        "prezzo": "",
+        "text": "Reconstructed and spacious apartment in the popular seaside town of Scalea!",
+        "textInfo": "Large apartment with two balconies, only 400 m from the beach - a few minutes on foot, private parking available, grocery store 300 m from the house, maximum capacity: 7 people, quiet location, ideal for rest - yet everything within reach!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "ru": {
+        "nomeAnunci": "Квартира 3+KK - Scalea, Calabria",
+        "nomeZona": "",
+        "city1": "Скалеа",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Квартира",
+        "elevator": "",
+        "terrazzo": "Еще",
+        "prezzo": "",
+        "text": "Реконструированная и просторная квартира в популярном приморском городе Скалеа!",
+        "textInfo": "Большая квартира с двумя балконами, всего в 400 м от пляжа - в нескольких минутах ходьбы пешком, частная парковка, продуктовый магазин в 300 м от дома, максимальная вместимость: 7 человек, тихое место, идеально подходит для отдыха - но все в пределах досягаемости!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "lt": {
+        "nomeAnunci": "3 butas+kk - skalė, kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Butas",
+        "elevator": "",
+        "terrazzo": "Vis dėlto",
+        "prezzo": "",
+        "text": "Rekonstruotas ir erdvus butas populiariajame Pajūrio mieste Scalea mieste!",
+        "textInfo": "Didelis butas su dviem balkonais, tik 400 m nuo paplūdimio - kelios minutės pėsčiomis, prieinama privati ​​automobilių stovėjimo aikštelė, maisto prekių parduotuvė 300 m nuo namo, maksimali talpa: 7 žmonės, rami vieta, idealiai tinka poilsiui - vis dėlto viskas pasiekiama!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "lv": {
+        "nomeAnunci": "Dzīvoklis 3+KK - Scalea, Calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Dzīvoklis",
+        "elevator": "",
+        "terrazzo": "Tomēr",
+        "prezzo": "",
+        "text": "Rekonstruēts un plašs dzīvoklis populārajā piejūras pilsētā Scalea!",
+        "textInfo": "Liels dzīvoklis ar diviem balkoniem, tikai 400 m attālumā no pludmales - dažas minūtes ar kājām, pieejama privāta autostāvvieta, pārtikas preču veikals 300 m attālumā no mājas, maksimālā ietilpība: 7 cilvēki, klusa atrašanās vieta, ideāli piemērota atpūtai - tomēr viss ir sasniedzams!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "pl": {
+        "nomeAnunci": "Mieszkanie 3+KK - Scale, Calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Apartament",
+        "elevator": "",
+        "terrazzo": "Już",
+        "prezzo": "",
+        "text": "Zrekonstruowane i przestronne mieszkanie w popularnym nadmorskim miasteczku Scalea!",
+        "textInfo": "Duży mieszkanie z dwoma balkonami, zaledwie 400 m od plaży - kilka minut pieszo, dostępny prywatny parking, sklep spożywczy 300 m od domu, maksymalna pojemność: 7 osób, cicha lokalizacja, idealna do odpoczynku - ale wszystko w zasięgu ręki!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "fi": {
+        "nomeAnunci": "Huoneisto 3+KK - Scalea, Calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Huoneisto",
+        "elevator": "",
+        "terrazzo": "Vielä",
+        "prezzo": "",
+        "text": "Rekonstruoitu ja tilava huoneisto suositussa merenrantakaupungissa Scalea!",
+        "textInfo": "Suuri asunto, jossa on kaksi parveketta, vain 400 metrin päässä rannasta - muutaman minuutin jalka, yksityinen pysäköinti saatavilla, ruokakauppa 300 metriä talosta, enimmäiskapasiteetti: 7 henkilöä, hiljainen sijainti, ihanteellinen lepoon - silti kaikki ulottuvilla!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "it": {
+        "nomeAnunci": "Appartamento 3+kk - scalea, calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Appartamento",
+        "elevator": "",
+        "terrazzo": "Ancora",
+        "prezzo": "",
+        "text": "Appartamento ricostruito e spazioso nella famosa città balneare di Scalea!",
+        "textInfo": "Grande appartamento con due balconi, a soli 400 m dalla spiaggia - pochi minuti a piedi, parcheggio privato disponibile, negozio di alimentari a 300 m dalla casa, capacità massima: 7 persone, posizione tranquilla, ideale per il riposo - ma tutto a portata di mano!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "de": {
+        "nomeAnunci": "Wohnung 3+KK - Scalea, Kalabrien",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Wohnung",
+        "elevator": "",
+        "terrazzo": "Noch",
+        "prezzo": "",
+        "text": "Rekonstruierte und geräumige Wohnung in der beliebten Küstenstadt Scalea!",
+        "textInfo": "Große Wohnung mit zwei Balkonen, nur 400 m vom Strand entfernt - ein paar Minuten zu Fuß, private Parkplätze, ein Lebensmittelgeschäft 300 m vom Haus entfernt, maximale Kapazität: 7 Personen, ruhige Lage, ideal für die Ruhe - Doch alles in Reichweite!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "sl": {
+        "nomeAnunci": "Apartma 3+KK - Scalia, Kalabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Stanovanje",
+        "elevator": "",
+        "terrazzo": "Še",
+        "prezzo": "",
+        "text": "Rekonstruirano in prostorno stanovanje v priljubljenem obmorskem mestu Scalea!",
+        "textInfo": "Veliko stanovanje z dvema balkonoma, le 400 m od plaže - nekaj minut peš, na voljo zasebno parkirišče, trgovina z živili 300 m od hiše, največja zmogljivost: 7 ljudi, tiha lokacija, idealna za počitek - še vedno je vse v dosegu!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      },
+      "no": {
+        "nomeAnunci": "Leilighet 3+KK - Scalea, Calabria",
+        "nomeZona": "",
+        "city1": "Scalea",
+        "street1": "",
+        "prezzo1": "",
+        "tipo": "Leilighet",
+        "elevator": "",
+        "terrazzo": "Ennå",
+        "prezzo": "",
+        "text": "Rekonstruert og romslig leilighet i den populære kystbyen SCALEA!",
+        "textInfo": "Stor leilighet med to balkonger, bare 400 m fra stranden - noen minutter til fots, privat parkering tilgjengelig, dagligvarebutikk 300 m fra huset, maksimal kapasitet: 7 personer, stille beliggenhet, ideell for hvile - men alt innen rekkevidde!",
+        "textInfo1": "",
+        "textInfo2": "",
+        "textInfo3": "",
+        "textInfo4": "",
+        "textInfo5": "",
+        "images": ""
+      }
+    }
+  }
+]

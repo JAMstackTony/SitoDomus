@@ -1,6 +1,6 @@
 let allFaqData = null;
 
-// 🔁 Рендерим FAQ по языку
+// 🔁 Рендерим FAQ по текущему языку
 function renderFaq(lang) {
   if (!allFaqData) return;
 
@@ -19,6 +19,9 @@ function renderFaq(lang) {
       </details>
     `;
   }).join("");
+
+  // Переводим элементы с data-i18n, если есть
+  loadAndApplyTranslations(lang);
 }
 
 // 🧠 Инициализация: загрузка JSON и первичный рендер
@@ -26,11 +29,20 @@ async function initFaqPage() {
   try {
     const res = await fetch("/faq_translated.json");
     allFaqData = await res.json();
-    renderFaq(window.currentLang);
+
+    const lang = localStorage.getItem("lang") || "cs";
+    window.currentLang = lang; // на всякий случай
+    renderFaq(lang);
   } catch (err) {
     console.error("❌ Ошибка при загрузке FAQ JSON:", err);
   }
 }
 
-// 💥 Вызов при загрузке страницы
-initFaqPage();
+// 💥 Инициализация на загрузке
+document.addEventListener("DOMContentLoaded", initFaqPage);
+
+// 🌐 Обработка смены языка
+window.addEventListener("languageChanged", () => {
+  const lang = localStorage.getItem("lang") || "cs";
+  renderFaq(lang);
+});

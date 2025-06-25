@@ -1,18 +1,8 @@
 ---
 title: Home
 layout: layout.njk
-pagination:
-    data: collections.announcements
-    size: 6
-    alias: pageAnnouncements
 ---
         <link rel="stylesheet" href="/styles/home.css">
-        <script>
-            window.Announcements = {{ collections.announcements | safe }};
-        </script>
-        <script>
-            window.Regione = {{ collections.regione | safe }};
-        </script>
 
 <section id="home">
       <div class="hero-section">
@@ -71,57 +61,9 @@ pagination:
 </div>
   
 
-<div class="section-anunci">
-    {% set count = 0 %}
-    {% for announcement in pageAnnouncements %}
-        <div class="bottom-block {% if count >= 3 %}mobile-hide{% endif %} {% if count >= 6 %}desktop-hide{% endif %}"
-             data-id="{{ announcement.data.riferimento }}"
-             data-riferimento="{{ announcement.data.riferimento }}"
-             data-city="{{ announcement.data.city1 }}"
-             data-zona="{{ announcement.data.nomeZona }}"
-             data-tipo="{{ announcement.data.tipo }}">
-            
-            <!-- Карусель -->
-            <div class="carousel-container">
-{% for image in announcement.data.images %}
-  <img src="/{{ image.src | urlencode }}"
-       alt="{{ image.alt or 'Property Image' }}"
-       class="carousel-image {% if loop.index0 == 0 %}active{% endif %}">
-{% endfor %}
-
-                <button class="carousel-btn prev">&#10094;</button>
-                <button class="carousel-btn next">&#10095;</button>
-            </div>
-
-            <!-- Информация об объекте -->
-            <a class="info-block1" href="/anunci/{{ announcement.fileSlug }}/">
-                <div class="info-anunci">{{ announcement.data.nomeAnunci }}</div>
-            </a>
-
-            <div class="price">
-                <a class="euro" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzo }} </a>
-                <a class="euro1" href="/anunci/{{ announcement.fileSlug }}/">{{ announcement.data.prezzosconto }}</a>
-                <a class="rif" href="/anunci/{{ announcement.fileSlug }}/">RIF {{ announcement.data.riferimento }}</a>
-            </div>
-
-            <div class="details">
-                <span><img src="/Foto/Icon/mq.svg" alt="Area Icon">{{ announcement.data.zonam2 }}</span>
-                <span><img src="/Foto/Icon/locale.svg" alt="Rooms Icon">{{ announcement.data.rooms }}</span>
-                <span><img src="/Foto/Icon/lift.svg" alt="Elevator Icon">{{ announcement.data.elevator }}</span>
-                <span><img src="/Foto/Icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
-                <span><img src="/Foto/Icon/bagno.svg" alt="Bathrooms Icon">{{ announcement.data.bagni }}</span>
-                <span><img src="/Foto/Icon/piano.svg" alt="Floor Icon">{{ announcement.data.floor }}</span>
-            </div>
-
-            <div class="cta">
-                <a href="/anunci/{{ announcement.fileSlug }}/" class="glass-link">
-                    <button class="glass-button" id="contatButton" data-i18n="random/but">Zobrazit inzerát</button>
-                </a>
-            </div>
-        </div>
-        {% set count = count + 1 %}
-    {% endfor %}
-</div>
+<section class="section-anunci" id="cardsContainer">
+    <!-- Карточки будут подгружены сюда -->
+</section>
 
 
 <div class="section4">

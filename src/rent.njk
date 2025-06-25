@@ -4,75 +4,12 @@ layout: layout.njk
 ---
 
         <link rel="stylesheet" href="/styles/property.css">
-        <script>
-            window.Rent = {{ collections.rent | safe }};
-        </script>
-
-<section class="hero-section">
-    <div class="filter">
         
-    </div>
-<div class="content-bottom">
-  {% set count = 0 %}
-  {% for announcement in collections.rent %}
-  <div class="bottom-block"
-       data-id="{{ announcement.data.riferimento }}"
-       data-riferimento="{{ announcement.data.riferimento }}"
-       data-city="{{ announcement.data.city1 }}"
-       data-zona="{{ announcement.data.street1 }}"
-       data-tipo="{{ announcement.data.tipo }}"
-       {% if count < 10 %}
-           style="display: flex;"
-       {% else %}
-           style="display: none;"
-       {% endif %}>
-       
-    <!-- Левая часть — Карусель -->
-    <div class="carousel-container">
-      {% set images = announcement.data.images %}
-      {% for i in range(0, 3) %}
-        {% if images[i] %}
-          <img loading="lazy" src="/{{ images[i].src | urlencode }}"
-               class="carousel-image {% if i == 0 %}active{% endif %}" 
-               alt="Property Image">
-        {% endif %}
-      {% endfor %}
-      <button class="carousel-btn prev">&#10094;</button>
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
-
-    <!-- Правая часть — Информация -->
-    <div class="info-cont">
-      <div class="price">
-       <a class="euro" href="/anunciRent/{{ announcement.fileSlug }}/">{{ announcement.data.prezzo }} </a>
-       <a class="rif" href="/anunciRent/{{ announcement.fileSlug }}/">RIF {{ announcement.data.riferimento }}</a>
-      </div>
-      <div class="nome-anunci">{{ announcement.data.nomeAnunci }}</div>
-      <a class="info-block1" href="/anunciRent/{{ announcement.fileSlug }}/">
-        <div class="info-anunci">{{ announcement.data.text | truncate(300) }}</div>
-      </a>
-      <div class="details">
-        <span><img alt="Casa" src="/foto/icon/mq.svg">{{ announcement.data.zonam2 }}</span>
-        <span><img alt="Camere da letto" src="/foto/icon/locale.svg">{{ announcement.data.rooms }}</span>
-        <span><img alt="Ascensore" src="/foto/icon/lift.svg">{{ announcement.data.elevator }}</span>
-        <span><img alt="Terrazza" src="/foto/icon/terazza.svg">{{ announcement.data.terrazzo }}</span>
-        <span><img alt="Bagno" src="/foto/icon/bagno.svg">{{ announcement.data.bagni }}</span>
-        <span><img alt="Pavimento" src="/foto/icon/piano.svg">{{ announcement.data.floor }}</span>
-      </div>
-      <div class="cta">
-        <a href="/anunciRent/{{ announcement.fileSlug }}/" class="glass-link">
-          <button class="glass-button" data-i18n="rentbut1">Nájemné</button>
-        </a>
-      </div>
-    </div>
-  </div>
-  {% set count = count + 1 %}
-  {% endfor %}
-</div>
-
-<div class="button-anunci" id="loadMoreContainer">
+<section class="hero-section">
+  <div class="content-bottom"></div>
+  <div class="button-anunci" id="loadMoreContainer">
     <button id="loadMoreButton" data-i18n="prop/but2">Zobrazit více</button>
-</div>
+  </div>
 </section>
 
-<script src="/script/property.js"></script>
+<script src="/script/rent.js"></script>

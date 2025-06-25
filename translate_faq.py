@@ -2,8 +2,8 @@ import json
 import requests
 import time
 
-INPUT_FILE = "src/faq_translated.json"
-OUTPUT_FILE = "src/faq_translated.json"
+INPUT_FILE = "src/services_translated.json"
+OUTPUT_FILE = "src/services_translated.json"
 TRANSLATE_URL = "http://localhost:5000/translate"
 
 LANGUAGES = ["en", "ru", "lt", "lv", "pl", "fi", "it", "de", "sl", "no"]

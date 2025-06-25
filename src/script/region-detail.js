@@ -2,7 +2,9 @@ let currentRegionSlug = null;
 let allRegionsData = null;
 
 // 🔁 Рендерим контент региона по текущему языку
-async function renderRegionDetail(lang) {
+function renderRegionDetail(lang) {
+  if (!allRegionsData || !currentRegionSlug) return;
+
   const region = allRegionsData.find(r => r.slug === currentRegionSlug);
   if (!region) return;
 
@@ -48,26 +50,33 @@ async function renderRegionDetail(lang) {
       </div>
     </div>
   `;
+
+  loadAndApplyTranslations(lang); // Применяем переводы статичных блоков
 }
 
-// 🧠 Инициализация страницы — загрузка JSON, установка slug
+// 🧠 Инициализация страницы — один раз
 async function initRegionDetailPage() {
   const urlParams = new URLSearchParams(window.location.search);
   currentRegionSlug = urlParams.get("slug");
   if (!currentRegionSlug) return;
 
-  const response = await fetch("/regions_translated.json");
-  allRegionsData = await response.json();
+  try {
+    const response = await fetch("/regions_translated.json");
+    allRegionsData = await response.json();
 
-  await renderRegionDetail(window.currentLang);
+    const lang = localStorage.getItem("lang") || "cs";
+    window.currentLang = lang;
+    renderRegionDetail(lang);
+  } catch (e) {
+    console.error("❌ Ошибка загрузки region JSON:", e);
+  }
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-  // 1. Сначала определяем язык
-  window.currentLang = localStorage.getItem("lang") || "cs";
+// 🚀 Запуск при загрузке
+document.addEventListener("DOMContentLoaded", initRegionDetailPage);
 
-  // 2. Затем загружаем данные и рендерим
-  await initRegionDetailPage();
-
+// 🌐 Ререндер при смене языка
+window.addEventListener("languageChanged", () => {
+  const lang = localStorage.getItem("lang") || "cs";
+  renderRegionDetail(lang);
 });
-

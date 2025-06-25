@@ -1,0 +1,394 @@
+[
+  {
+    "id": "serv1",
+    "original": {
+      "h1": "Prodej nemovitostí v Itálii",
+      "h2": "Specializujeme se na atraktivní lokality, zejména Kalábrii a Apulii. Nabízíme apartmány, domy, vily, pozemky i investiční příležitosti. V našem portfoliu najdete nemovitosti u moře, v historických centrech i v klidné přírodě."
+    },
+    "translations": {
+      "en": {
+        "h1": "Sale of real estate in Italy",
+        "h2": "We specialize in attractive locations, especially Calabria and Apulia. We offer apartments, houses, villas, land and investment opportunities. In our portfolio you will find real estate by the sea, in historical centers and in the quiet nature."
+      },
+      "ru": {
+        "h1": "Продажа недвижимости в Италии",
+        "h2": "Мы специализируемся на привлекательных местах, особенно в Калабрии и Апулии. Мы предлагаем квартиры, дома, виллы, землю и инвестиционные возможности. В нашем портфеле вы найдете недвижимость у моря, в исторических центрах и в тихой природе."
+      },
+      "lt": {
+        "h1": "Nekilnojamojo turto pardavimas Italijoje",
+        "h2": "Mes specializuojamės patraukliose vietose, ypač Kalabrijoje ir Apulijoje. Mes siūlome butus, namus, vilas, žemės ir investavimo galimybes. Mūsų portfelyje nekilnojamasis turtas rasite prie jūros, istoriniuose centruose ir ramioje pobūdyje."
+      },
+      "lv": {
+        "h1": "Nekustamā īpašuma pārdošana Itālijā",
+        "h2": "Mēs specializējamies pievilcīgās vietās, īpaši Kalabrijā un Apulijā. Mēs piedāvājam dzīvokļus, mājas, villas, zemes un investīciju iespējas. Mūsu portfelī jūs atradīsit nekustamo īpašumu pie jūras, vēsturiskajos centros un klusajā dabā."
+      },
+      "pl": {
+        "h1": "Sprzedaż nieruchomości we Włoszech",
+        "h2": "Specjalizujemy się w atrakcyjnych lokalizacjach, zwłaszcza Kalabrii i Apulii. Oferujemy apartamenty, domy, wille, możliwości gruntów i inwestycji. W naszym portfolio znajdziesz nieruchomości nad morzem, w centrach historycznych i w cichej naturze."
+      },
+      "fi": {
+        "h1": "Kiinteistöjen myynti Italiassa",
+        "h2": "Olemme erikoistuneet houkutteleviin paikkoihin, erityisesti Calabriaan ja Apuliaan. Tarjoamme huoneistoja, taloja, huviloita, maa- ja sijoitusmahdollisuuksia. Portfoliossamme löydät kiinteistöjä meren rannalla, historiallisissa keskuksissa ja hiljaisessa luonteessa."
+      },
+      "it": {
+        "h1": "Vendita di immobili in Italia",
+        "h2": "Siamo specializzati in luoghi attraenti, in particolare Calabria e Apulia. Offriamo appartamenti, case, ville, terreni e opportunità di investimento. Nel nostro portafoglio troverai immobili sul mare, nei centri storici e nella natura tranquilla."
+      },
+      "de": {
+        "h1": "Verkauf von Immobilien in Italien",
+        "h2": "Wir sind spezialisiert auf attraktive Orte, insbesondere an Kalabrien und Apulien. Wir bieten Wohnungen, Häuser, Villen, Land- und Investitionsmöglichkeiten an. In unserem Portfolio finden Sie Immobilien am Meer, in historischen Zentren und in der ruhigen Natur."
+      },
+      "sl": {
+        "h1": "Prodaja nepremičnin v Italiji",
+        "h2": "Specializirani smo za privlačne lokacije, zlasti Calabria in Apulia. Ponujamo apartmaje, hiše, vile, zemljiške in naložbene priložnosti. V našem portfelju boste našli nepremičnine ob morju, v zgodovinskih središčih in v tihi naravi."
+      },
+      "no": {
+        "h1": "Salg av eiendommer i Italia",
+        "h2": "Vi spesialiserer oss på attraktive steder, spesielt Calabria og Apulia. Vi tilbyr leiligheter, hus, villaer, land- og investeringsmuligheter. I vår portefølje finner du eiendom ved sjøen, i historiske sentre og i stille natur."
+      }
+    }
+  },
+  {
+    "id": "serv2",
+    "original": {
+      "h1": "Kompletní realitní servis",
+      "h2": "Pomůžeme vám s výběrem nemovitosti dle vašich přání a rozpočtu. Zajišťujeme online i osobní prohlídky přímo v Itálii. Asistujeme při otevření bankovního účtu, získání daňového čísla (codice fiscale) a dalších formalitách. Jednáme s prodávajícím v italštině ve vašem zastoupení."
+    },
+    "translations": {
+      "en": {
+        "h1": "Complete real estate service",
+        "h2": "We will help you choose the property according to your wishes and budget. We also provide personal tours directly in Italy. We assist when opening a bank account, obtaining a tax number (Codice Fiscale) and other formalities. We are negotiating with the seller in Italian on your representation."
+      },
+      "ru": {
+        "h1": "Полная служба недвижимости",
+        "h2": "Мы поможем вам выбрать собственность в соответствии с вашими пожеланиями и бюджетом. Мы также проводим личные туры непосредственно в Италии. Мы помогаем при открытии банковского счета, получая налоговый номер (Codice Fiscale) и другие формальности. Мы ведем переговоры с продавцом на итальянском языке по вашему представительству."
+      },
+      "lt": {
+        "h1": "Užbaigti nekilnojamojo turto paslaugą",
+        "h2": "Mes padėsime jums pasirinkti turtą pagal jūsų norus ir biudžetą. Mes taip pat teikiame asmenines ekskursijas tiesiai Italijoje. Mes padedame atidarant banko sąskaitą, gaunant mokesčių numerį („Codice Fiskale“) ir kitus formalumus. Mes deramės su italų pardavėju dėl jūsų atstovavimo."
+      },
+      "lv": {
+        "h1": "Pilnīgs nekustamā īpašuma pakalpojums",
+        "h2": "Mēs palīdzēsim jums izvēlēties īpašumu atbilstoši jūsu vēlmēm un budžetam. Mēs arī nodrošinām personīgās ekskursijas tieši Itālijā. Mēs palīdzam, atverot bankas kontu, iegūstot nodokļu numuru (CODICE fiskale) un citas formalitātes. Mēs sarunājamies ar pārdevēju itāļu valodā par jūsu pārstāvību."
+      },
+      "pl": {
+        "h1": "Ukończ usługę nieruchomości",
+        "h2": "Pomożemy Ci wybrać nieruchomość zgodnie z twoimi życzeniami i budżetem. Zapewniamy również osobiste wycieczki bezpośrednio we Włoszech. Pomagamy otwierając rachunek bankowy, uzyskując numer podatkowy (Fiscale Codice) i inne formalności. Negocjujemy ze sprzedawcą po włosku w sprawie twojej reprezentacji."
+      },
+      "fi": {
+        "h1": "Täydellinen kiinteistöpalvelu",
+        "h2": "Autamme sinua valitsemaan kiinteistön toiveidesi ja budjetin mukaan. Tarjoamme myös henkilökohtaisia ​​retkiä suoraan Italiassa. Autamme avaamalla pankkitiliä, hankkimalla veronumero (Codice Fiscale) ja muut muodollisuudet. Neuvottelemme italialaisen myyjän kanssa edustajastasi."
+      },
+      "it": {
+        "h1": "Servizio immobiliare completo",
+        "h2": "Ti aiuteremo a scegliere la proprietà in base ai tuoi desideri e budget. Forniamo anche tour personali direttamente in Italia. Aiutiamo quando apriamo un conto bancario, ottenendo un numero fiscale (fiscale di Codice) e altre formalità. Stiamo negoziando con il venditore in italiano sulla tua rappresentazione."
+      },
+      "de": {
+        "h1": "Komplette Immobilienservice",
+        "h2": "Wir helfen Ihnen bei der Auswahl der Immobilie nach Ihren Wünschen und Ihrem Budget. Wir bieten auch persönliche Touren direkt in Italien an. Wir unterstützen bei der Eröffnung eines Bankkontos, die eine Steuernummer (Codice Fiscale) und andere Formalitäten erhalten. Wir verhandeln mit dem Verkäufer in Italienisch über Ihre Vertretung."
+      },
+      "sl": {
+        "h1": "Popolna storitev nepremičnin",
+        "h2": "Pomagali vam bomo izbrati nepremičnino glede na vaše želje in proračun. Osebne oglede nudimo tudi neposredno v Italiji. Pomagamo pri odpiranju bančnega računa, pri čemer pridobimo davčno številko (Codice Fiscale) in druge formalnosti. S prodajalcem se v italijanščini pogajamo o vašem zastopanju."
+      },
+      "no": {
+        "h1": "Komplett eiendomstjeneste",
+        "h2": "Vi vil hjelpe deg med å velge eiendommen etter dine ønsker og budsjett. Vi gir også personlige turer direkte i Italia. Vi bistår når vi åpner en bankkonto, skaffer et skattetall (Codice Fiscale) og andre formaliteter. Vi forhandler med selgeren på italiensk om din representasjon."
+      }
+    }
+  },
+  {
+    "id": "serv3",
+    "original": {
+      "h1": "Právní a administrativní podpora",
+      "h2": "Spolupracujeme s ověřenými italskými notáři a advokáty. Zajišťujeme kompletní právní prověření nemovitosti, překlady smluv, tlumočení a asistenci při převodu energií, zápisu do katastru, platbě daní a dalších úředních povinnostech."
+    },
+    "translations": {
+      "en": {
+        "h1": "Legal and administrative support",
+        "h2": "We cooperate with proven Italian notaries and lawyers. We provide complete legal examination of the property, translations of contracts, interpreting and assistance in the transfer of energy, registration in the land, payment of taxes and other official obligations."
+      },
+      "ru": {
+        "h1": "Юридическая и административная поддержка",
+        "h2": "Мы сотрудничаем с проверенными итальянскими нотариусами и адвокатами. Мы предоставляем полное юридическое исследование имущества, переводы контрактов, интерпретацию и помощь в передаче энергии, регистрации на земле, уплате налогов и других официальных обязательств."
+      },
+      "lt": {
+        "h1": "Teisinė ir administracinė parama",
+        "h2": "Mes bendradarbiaujame su įrodytais italų notarais ir teisininkais. Mes pateikiame išsamų teisinį turto ištyrimą, sutarčių vertimą, aiškinimą ir pagalbą perduodant energiją, registraciją žemėje, mokesčių mokėjimą ir kitus oficialius įsipareigojimus."
+      },
+      "lv": {
+        "h1": "Juridisks un administratīvs atbalsts",
+        "h2": "Mēs sadarbojamies ar pārbaudītiem itāļu notāriem un juristiem. Mēs nodrošinām pilnīgu īpašuma pārbaudi, līgumu tulkojumus, interpretāciju un palīdzību enerģijas nodošanā, reģistrācijā zemē, nodokļu samaksai un citām oficiālajām saistībām."
+      },
+      "pl": {
+        "h1": "Wsparcie prawne i administracyjne",
+        "h2": "Współpracujemy ze sprawdzonymi włoskimi notariuszy i prawnikami. We provide complete legal examination of the property, translations of contracts, interpreting and assistance in the transfer of energy, registration in the land, payment of taxes and other official obligations."
+      },
+      "fi": {
+        "h1": "Laillinen ja hallinnollinen tuki",
+        "h2": "Teemme yhteistyötä todistettujen italialaisten notaarien ja lakimiesten kanssa. Tarjoamme kiinteistön täydellisen oikeudellisen tutkimuksen, sopimusten käännökset, tulkitsemisen ja avun energian siirtämisessä, maan rekisteröinnissä, verojen maksamisessa ja muissa virallisissa velvoitteissa."
+      },
+      "it": {
+        "h1": "Supporto legale e amministrativo",
+        "h2": "Collabriamo con notai e avvocati italiani comprovati. Forniamo un esame legale completo della proprietà, traduzioni di contratti, interpretazione e assistenza nel trasferimento di energia, registrazione nel terreno, pagamento delle tasse e altri obblighi ufficiali."
+      },
+      "de": {
+        "h1": "Rechtliche und administrative Unterstützung",
+        "h2": "Wir arbeiten mit bewährten italienischen Notaren und Anwälten zusammen. Wir liefern eine vollständige rechtliche Prüfung des Eigentums, Übersetzungen von Verträgen, Auslegung und Unterstützung bei der Energieübertragung, der Registrierung im Grundstück, der Zahlung von Steuern und anderen offiziellen Verpflichtungen."
+      },
+      "sl": {
+        "h1": "Pravna in upravna podpora",
+        "h2": "Sodelujemo s preizkušenimi italijanskimi notarji in odvetniki. Zagotavljamo popoln pravni pregled nepremičnine, prevode pogodb, razlage in pomoč pri prenosu energije, registracije v zemlji, plačilo davkov in drugih uradnih obveznosti."
+      },
+      "no": {
+        "h1": "Juridisk og administrativ støtte",
+        "h2": "Vi samarbeider med velprøvde italienske notar og advokater. Vi gir fullstendig juridisk undersøkelse av eiendommen, oversettelser av kontrakter, tolking og hjelp til overføring av energi, registrering i land, betaling av skatter og andre offisielle forpliktelser."
+      }
+    }
+  },
+  {
+    "id": "serv4",
+    "original": {
+      "h1": "Služby po koupi",
+      "h2": "Doporučíme spolehlivé řemeslníky pro opravy a rekonstrukce, pomůžeme s nákupem nábytku i kompletním zařízením interiéru. Zajistíme úklidové a správcovské služby a dohled nad nemovitostí během vaší nepřítomnosti."
+    },
+    "translations": {
+      "en": {
+        "h1": "Services after purchase",
+        "h2": "We recommend reliable craftsmen for repairs and reconstruction, help with the purchase of furniture and complete interior equipment. We provide cleaning and administration services and real estate supervision during your absence."
+      },
+      "ru": {
+        "h1": "Услуги после покупки",
+        "h2": "Мы рекомендуем надежных мастеров для ремонта и реконструкции, помочь с покупкой мебели и полного внутреннего оборудования. Мы предоставляем услуги по уборке и администрированию и надзор за недвижимостью во время вашего отсутствия."
+      },
+      "lt": {
+        "h1": "Paslaugos po pirkimo",
+        "h2": "Mes rekomenduojame patikimus amatininkus remontuoti ir rekonstruoti, padėti pirkti baldus ir pilną interjero įrangą. Mes teikiame valymo ir administravimo paslaugas bei nekilnojamojo turto priežiūrą jūsų nebuvimo metu."
+      },
+      "lv": {
+        "h1": "Pakalpojumi pēc pirkuma",
+        "h2": "Mēs iesakām uzticamus amatniekus remontam un rekonstrukcijai, palīdzēt iegādāties mēbeles un pilnīgu interjera aprīkojumu. Jūsu prombūtnes laikā mēs piedāvājam tīrīšanas un administrēšanas pakalpojumus un nekustamā īpašuma uzraudzību."
+      },
+      "pl": {
+        "h1": "Usługi po zakupie",
+        "h2": "Zalecamy niezawodnych rzemieślników do napraw i odbudowy, pomoc w zakupie mebli i kompletnego sprzętu wewnętrznego. Podczas Twojej nieobecności zapewniamy usługi czyszczące i administracyjne oraz nadzór nieruchomości."
+      },
+      "fi": {
+        "h1": "Palvelut oston jälkeen",
+        "h2": "Suosittelemme luotettavia käsityöläisiä korjauksia ja jälleenrakennuksia, auttamaan huonekalujen ja täydellisten sisustuslaitteiden ostamisessa. Tarjoamme siivous- ja hallintopalveluita sekä kiinteistöjen valvontaa poissaolosi aikana."
+      },
+      "it": {
+        "h1": "Servizi dopo l'acquisto",
+        "h2": "Raccomandiamo artigiani affidabili per le riparazioni e la ricostruzione, aiuto con l'acquisto di mobili e attrezzature interne complete. Forniamo servizi di pulizia e amministrazione e supervisione immobiliare durante la tua assenza."
+      },
+      "de": {
+        "h1": "Dienstleistungen nach dem Kauf",
+        "h2": "Wir empfehlen zuverlässige Handwerker für Reparaturen und Rekonstruktionen, helfen beim Kauf von Möbeln und komplette Innenausrüstung. Während Ihrer Abwesenheit bieten wir Reinigungs- und Verwaltungsdienste und Immobilienaufsicht an."
+      },
+      "sl": {
+        "h1": "Storitve po nakupu",
+        "h2": "Priporočamo zanesljive obrtnike za popravila in obnovo, pomoč pri nakupu pohištva in popolni notranji opremi. Med odsotnostjo zagotavljamo storitve čiščenja in upravljanja ter nadzor nepremičnin."
+      },
+      "no": {
+        "h1": "Tjenester etter kjøp",
+        "h2": "Vi anbefaler pålitelige håndverkere for reparasjoner og gjenoppbygging, hjelp med kjøp av møbler og komplett interiørutstyr. Vi tilbyr rengjørings- og administrasjonstjenester og tilsyn med eiendommer under ditt fravær."
+      }
+    }
+  },
+  {
+    "id": "serv5",
+    "original": {
+      "h1": "Investiční a nájemní poradenství",
+      "h2": "Posoudíme výnosnost nemovitosti pro krátkodobý i dlouhodobý pronájem, poradíme s investiční strategií a propojením na lokální realitní sítě a rezervační platformy. Pomůžeme s registrací u italských úřadů v případě pronájmu."
+    },
+    "translations": {
+      "en": {
+        "h1": "Investment and rental counseling",
+        "h2": "We will assess the profitability of real estate for short and long -term rental, advise on investment strategy and link to local real estate networks and reservation platforms. We will help register with the Italian authorities in the case of rent."
+      },
+      "ru": {
+        "h1": "Инвестиционные и арендованные консультации",
+        "h2": "Мы оценим прибыльность недвижимости для краткосрочной и долгосрочной аренды, консультируем инвестиционную стратегию и связываем местные сети недвижимости и платформы резервирования. Мы поможем зарегистрироваться в итальянских властях в случае арендной платы."
+      },
+      "lt": {
+        "h1": "Investicijų ir nuomos konsultacijos",
+        "h2": "Mes įvertinsime nekilnojamojo turto pelningumą trumpalaikei ir ilgalaikei nuomai, patarsime apie investavimo strategiją ir nuorodą į vietinius nekilnojamojo turto tinklus ir rezervavimo platformas. Mes padėsime užsiregistruoti Italijos valdžios institucijose nuomos byloje."
+      },
+      "lv": {
+        "h1": "Investīciju un nomas konsultācijas",
+        "h2": "Mēs novērtēsim nekustamā īpašuma rentabilitāti īstermiņa un ilgtermiņa īrei, konsultēsimies par ieguldījumu stratēģiju un saiti uz vietējiem nekustamā īpašuma tīkliem un rezervācijas platformām. Mēs palīdzēsim reģistrēties Itālijas varas iestādēs īres gadījumā."
+      },
+      "pl": {
+        "h1": "Doradztwo inwestycyjne i wypożyczalni",
+        "h2": "Ocenimy rentowność nieruchomości na krótkowzroczność i długoterminową czynsz, doradzimy strategię inwestycyjną i link do lokalnych sieci nieruchomości i platform rezerwacyjnych. Pomożemy zarejestrować się w władzach włoskich w przypadku czynszu."
+      },
+      "fi": {
+        "h1": "Sijoitus- ja vuokra -neuvonta",
+        "h2": "Arvioimme kiinteistöjen kannattavuuden lyhyen ja pitkän aikavälin vuokralle, neuvoja sijoitusstrategiasta ja yhteys paikallisiin kiinteistöverkkoihin ja varausalustoihin. Autamme ilmoittautumaan Italian viranomaisten kanssa vuokran tapauksessa."
+      },
+      "it": {
+        "h1": "Consulenza sugli investimenti e in affitto",
+        "h2": "Valuteremo la redditività del settore immobiliare per un noleggio a breve e lungo termine, consiglieremo sulla strategia di investimento e il collegamento alle reti immobiliari locali e alle piattaforme di prenotazione. Aiuteremo a registrarsi con le autorità italiane in caso di affitto."
+      },
+      "de": {
+        "h1": "Investitions- und Mietberatung",
+        "h2": "Wir werden die Rentabilität von Immobilien für kurze und langfristige Miete bewerten, über die Anlagestrategie und die Verbindung zu lokalen Immobiliennetzwerken und Reservierungsplattformen beraten. Wir werden uns bei der Miete bei den italienischen Behörden bei der Registrierung bei der Registrierung bei der Registrierung bei der Registrierung unterstützen."
+      },
+      "sl": {
+        "h1": "Svetovanje o naložbah in najemu",
+        "h2": "Ocenili bomo dobičkonosnost nepremičnin za kratkoročno in dolgoročno najemnino, svetovali o naložbeni strategiji in povezali z lokalnimi nepremičninskimi omrežji in rezervacijskimi platformami. Pomagali se bomo registrirati pri italijanskih oblastih v primeru najemnine."
+      },
+      "no": {
+        "h1": "Investering og leierådgivning",
+        "h2": "Vi vil vurdere lønnsomheten til eiendommer for kort- og langvarig leie, gi råd om investeringsstrategi og lenke til lokale eiendomsnettverk og reservasjonsplattformer. Vi vil hjelpe deg med å registrere deg hos italienske myndigheter når det gjelder husleie."
+      }
+    }
+  },
+  {
+    "id": "serv6",
+    "original": {
+      "h1": "Lidský přístup a dlouhodobá podpora",
+      "h2": "Mluvíme česky, slovensky, italsky, anglicky, rusky i polsky. Jsme vám k dispozici i po podpisu smlouvy – telefonicky, online i osobně. Naše práce stojí na důvěře, profesionalitě a osobním přístupu ke každému klientovi."
+    },
+    "translations": {
+      "en": {
+        "h1": "Human approach and long -term support",
+        "h2": "We speak Czech, Slovak, Italian, English, Russian and Polish. We are also available to you after signing the contract - telephone, online and in person. Our work is based on trust, professionalism and personal approach to each client."
+      },
+      "ru": {
+        "h1": "Человеческий подход и долгосрочная поддержка",
+        "h2": "Мы говорим на чешском, славацком, итальянском, английском, русском и польском. Мы также доступны вам после подписания контракта - телефон, онлайн и лично. Наша работа основана на доверии, профессионализме и личном подходе к каждому клиенту."
+      },
+      "lt": {
+        "h1": "Žmogaus požiūris ir ilgalaikė parama",
+        "h2": "Mes kalbame čekų, Slovakijos, italų, anglų, rusų ir lenkų. Mes taip pat esame prieinami jums pasirašę sutartį - telefoną, internete ir asmeniškai. Mūsų darbas yra pagrįstas pasitikėjimu, profesionalumu ir asmeniniu požiūriu į kiekvieną klientą."
+      },
+      "lv": {
+        "h1": "Cilvēka pieeja un ilgtermiņa atbalsts",
+        "h2": "Mēs runājam čehu, slovākijas, itāļu, angļu, krievu un poļu valodas. Mēs arī jums esam pieejami pēc līguma parakstīšanas - telefona, tiešsaistē un klātienē. Mūsu darbs ir balstīts uz uzticību, profesionalitāti un personīgu pieeju katram klientam."
+      },
+      "pl": {
+        "h1": "Podejście ludzkie i długoterminowe wsparcie",
+        "h2": "Mówimy po czeskich, słowackich, włoskich, angielskich, rosyjskich i polskich. Jesteśmy również dostępni po podpisaniu umowy - telefon, online i osobiście. Nasza praca opiera się na zaufaniu, profesjonalizmie i osobistym podejściu do każdego klienta."
+      },
+      "fi": {
+        "h1": "Inhimillinen lähestymistapa ja pitkäaikainen tuki",
+        "h2": "Puhumme tšekkiläistä, slovakiaa, italiaa, englantia, venäjää ja puola. Olemme myös käytettävissäsi sopimuksen allekirjoittamisen jälkeen - puhelin, verkossa ja henkilökohtaisesti. Työmme perustuu luottamukseen, ammattitaitoon ja henkilökohtaiseen lähestymistapaan jokaiselle asiakkaalle."
+      },
+      "it": {
+        "h1": "Approccio umano e supporto a lungo termine",
+        "h2": "Parliamo ceco, slovacco, italiano, inglese, russo e polacco. Siamo anche disponibili per te dopo aver firmato il contratto: telefono, online e di persona. Il nostro lavoro si basa su fiducia, professionalità e approccio personale a ciascun cliente."
+      },
+      "de": {
+        "h1": "Menschlicher Ansatz und langfristige Unterstützung",
+        "h2": "Wir sprechen tschechisch, slowakisch, italienisch, englisch, russisch und polnisch. Wir stehen Ihnen auch nach der Unterzeichnung des Vertrags zur Verfügung - Telefon, online und persönlich. Unsere Arbeit basiert auf Vertrauen, Professionalität und persönlichem Ansatz für jeden Kunden."
+      },
+      "sl": {
+        "h1": "Človeški pristop in dolgoročna podpora",
+        "h2": "Govorimo češko, slovaško, italijansko, angleško, rusko in poljsko. Na voljo smo vam tudi po podpisu pogodbe - telefonu, na spletu in osebno. Naše delo temelji na zaupanju, strokovnosti in osebnem pristopu do vsake stranke."
+      },
+      "no": {
+        "h1": "Menneskelig tilnærming og langvarig støtte",
+        "h2": "Vi snakker tsjekkisk, slovakisk, italiensk, engelsk, russisk og polsk. Vi er også tilgjengelige for deg etter å ha signert kontrakten - telefon, online og personlig. Arbeidet vårt er basert på tillit, profesjonalitet og personlig tilnærming til hver klient."
+      }
+    }
+  },
+  {
+    "id": "serv7",
+    "original": {
+      "h1": "Možnost pořízení nemovitosti na dálku",
+      "h2": "Pro klienty, kteří nemohou cestovat do Itálie, nabízíme možnost koupě nemovitosti z pohodlí domova. Zajistíme video prohlídku, právní servis a podpis kupní smlouvy na základě plné moci. Celý proces je bezpečný, přehledný a časově úsporný."
+    },
+    "translations": {
+      "en": {
+        "h1": "The possibility of acquiring real estate remotely",
+        "h2": "For clients who cannot travel to Italy, we offer the possibility of buying real estate from the comfort of the home. We provide video inspection, legal service and signature of the purchase contract on the basis of a power of attorney. The whole process is safe, clear and time -efficient."
+      },
+      "ru": {
+        "h1": "Возможность приобрести недвижимость удаленно",
+        "h2": "Для клиентов, которые не могут поехать в Италию, мы предлагаем возможность покупать недвижимость в комфорте дома. Мы предоставляем видеозапись, юридическое обслуживание и подпись контракта на покупку на основе доверенности. Весь процесс безопасен, чистый и эффективный."
+      },
+      "lt": {
+        "h1": "Galimybė nuotoliniu būdu įsigyti nekilnojamąjį turtą",
+        "h2": "Klientams, kurie negali keliauti į Italiją, mes siūlome galimybę pirkti nekilnojamąjį turtą iš namų komforto. Mes teikiame vaizdo įrašų patikrinimą, teisinę paslaugą ir pirkimo sutarties parašą pagal įgaliojimą. Visas procesas yra saugus, aiškus ir efektyvus."
+      },
+      "lv": {
+        "h1": "Iespēja no attāluma iegūt nekustamo īpašumu",
+        "h2": "Klientiem, kuri nevar ceļot uz Itāliju, mēs piedāvājam iespēju iegādāties nekustamo īpašumu no mājas ērtības. Mēs nodrošinām video pārbaudi, juridisko pakalpojumu un pirkuma līguma parakstu, pamatojoties uz pilnvaru. Viss process ir drošs, skaidrs un laiks efektīvs."
+      },
+      "pl": {
+        "h1": "Możliwość zdalnego nabycia nieruchomości",
+        "h2": "Dla klientów, którzy nie mogą podróżować do Włoch, oferujemy możliwość zakupu nieruchomości w zaciszu domu. Zapewniamy kontrolę wideo, usługę prawną i podpis umowy zakupu na podstawie pełnomocnictwa. Cały proces jest bezpieczny, wyraźny i niedostateczny."
+      },
+      "fi": {
+        "h1": "Mahdollisuus hankkia kiinteistöjä etäyhteyden kautta",
+        "h2": "Asiakkaille, jotka eivät voi matkustaa Italiaan, tarjoamme mahdollisuuden ostaa kiinteistöjä kodin mukavuudesta. Tarjoamme videotarkastuksia, laillista palvelua ja ostosopimuksen allekirjoitusta valtakirjan perusteella. Koko prosessi on turvallinen, selkeä ja aika -tehokas."
+      },
+      "it": {
+        "h1": "La possibilità di acquisire immobili in remoto",
+        "h2": "Per i clienti che non possono viaggiare in Italia, offriamo la possibilità di acquistare immobili dal comfort della casa. Forniamo ispezione video, servizio legale e firma del contratto di acquisto sulla base di una procura. L'intero processo è sicuro, chiaro e efficiente dal tempo."
+      },
+      "de": {
+        "h1": "Die Möglichkeit, Immobilien aus der Ferne zu erwerben",
+        "h2": "Für Kunden, die nicht nach Italien reisen können, bieten wir die Möglichkeit, Immobilien bequem von zu Hause aus zu kaufen. Wir bieten Videoinspektion, Rechtsdienst und Unterschrift des Kaufvertrags auf der Grundlage einer Anwaltskräfte. Der gesamte Prozess ist sicher, klar und zeitlich effizient."
+      },
+      "sl": {
+        "h1": "Možnost pridobivanja nepremičnin na daljavo",
+        "h2": "Za stranke, ki ne morejo potovati v Italijo, ponujamo možnost nakupa nepremičnin iz udobja doma. Ponujamo video inšpekcijski pregled, pravno storitev in podpis pogodbe o nakupu na podlagi pooblastila. Celoten postopek je varen, jasen in časovno učinkovit."
+      },
+      "no": {
+        "h1": "Muligheten for å skaffe eiendommer eksternt",
+        "h2": "For kunder som ikke kan reise til Italia, tilbyr vi muligheten for å kjøpe eiendommer fra hjemmet. Vi tilbyr videoinspeksjon, juridisk service og underskrift av kjøpekontrakten på grunnlag av en fullmakt. Hele prosessen er trygg, klar og tidseffektiv."
+      }
+    }
+  },
+  {
+    "id": "serv8",
+    "original": {
+      "h1": "Zprostředkování vámi vybrané nemovitosti",
+      "h2": "Našli jste si nemovitost v Itálii sami, ale potřebujete profesionální podporu? Zajistíme právní prověření, komunikaci s prodávajícím, překlady dokumentů i celkový průběh koupě – bezpečně, efektivně a s vaší plnou důvěrou."
+    },
+    "translations": {
+      "en": {
+        "h1": "Mediation of your selected real estate",
+        "h2": "Did you find the property in Italy yourself, but do you need professional support? We ensure legal check, communication with the seller, translations of documents and the overall course of purchase - safely, efficiently and with your full confidence."
+      },
+      "ru": {
+        "h1": "Посредничество от выбранной недвижимости",
+        "h2": "Вы нашли собственность в Италии сами, но вам нужна профессиональная поддержка? Мы обеспечиваем юридическую проверку, общение с продавцом, переводы документов и общий курс покупки - безопасно, эффективно и с вашей полной уверенностью."
+      },
+      "lt": {
+        "h1": "Jūsų pasirinkto nekilnojamojo turto tarpininkavimas",
+        "h2": "Ar pats radote turtą Italijoje, bet ar jums reikia profesionalios paramos? Mes teikiame teisinį egzaminą, bendravimą su pardavėju, dokumentų vertimus ir bendrą pirkimo kursą - saugiai, efektyviai ir visapusiškai pasitikėdami savimi."
+      },
+      "lv": {
+        "h1": "Jūsu izvēlētā nekustamā īpašuma starpniecība",
+        "h2": "Vai pats atradāt īpašumu Itālijā, bet vai jums ir nepieciešams profesionāls atbalsts? Mēs nodrošinām juridisku pārbaudi, saziņu ar pārdevēju, dokumentu tulkojumiem un kopējo pirkuma kursu - droši, efektīvi un ar visu pārliecību."
+      },
+      "pl": {
+        "h1": "Mediacja wybranej nieruchomości",
+        "h2": "Czy sam znalazłeś nieruchomość we Włoszech, ale czy potrzebujesz profesjonalnego wsparcia? Zapewniamy egzamin prawny, komunikację ze sprzedawcą, tłumaczenia dokumentów i ogólny kurs zakupu - bezpiecznie, skutecznie i z pełnym zaufaniem."
+      },
+      "fi": {
+        "h1": "Valitun kiinteistösi sovittelu",
+        "h2": "Löysitkö itse Italian kiinteistön, mutta tarvitsetko ammatillista tukea? Tarjoamme laillista tutkimusta, viestinnän myyjän kanssa, asiakirjojen käännökset ja yleinen ostokurssi - turvallisesti, tehokkaasti ja täydellisellä luottamuksellasi."
+      },
+      "it": {
+        "h1": "Mediazione del tuo immobile selezionato",
+        "h2": "Hai trovato tu stesso la proprietà in Italia, ma hai bisogno di supporto professionale? Garantiamo un controllo legale, la comunicazione con il venditore, le traduzioni di documenti e il corso generale di acquisto - in modo sicuro, efficiente e con la tua piena fiducia."
+      },
+      "de": {
+        "h1": "Vermittlung Ihrer ausgewählten Immobilien",
+        "h2": "Haben Sie die Immobilie in Italien selbst gefunden, benötigen Sie aber professionelle Unterstützung? Wir gewährleisten die rechtliche Überprüfung, die Kommunikation mit dem Verkäufer, die Übersetzungen von Dokumenten und den Gesamtkaufverlauf - sicher, effizient und mit Ihrem vollen Vertrauen."
+      },
+      "sl": {
+        "h1": "Posredovanje izbranih nepremičnin",
+        "h2": "Ste nepremičnino našli v Italiji sami, a potrebujete strokovno podporo? Zagotavljamo pravno preverjanje, komunikacijo s prodajalcem, prevode dokumentov in celoten potek nakupa - varno, učinkovito in s popolnim zaupanjem."
+      },
+      "no": {
+        "h1": "Mekling av din valgte eiendom",
+        "h2": "Fant du eiendommen i Italia selv, men trenger du profesjonell støtte? Vi sikrer lovlig sjekk, kommunikasjon med selgeren, oversettelser av dokumenter og det samlede kjøpsforløpet - trygt, effektivt og med full tillit."
+      }
+    }
+  }
+]

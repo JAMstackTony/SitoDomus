@@ -2,15 +2,15 @@ import json
 import requests
 import time
 
-INPUT_FILE = "src/index2_translated.json"
-OUTPUT_FILE = "src/index2_translated.json"
+INPUT_FILE = "src/script/rent_translated.json"
+OUTPUT_FILE = "src/script/rent_translated.json"
 TRANSLATE_URL = "http://localhost:5000/translate"
 
-LANGUAGES = ["ru", "lt", "lv", "pl", "fi", "it", "de", "sl", "no"]
+LANGUAGES = ["en", "ru", "lt", "lv", "pl", "fi", "it", "de", "sl", "no"]
 PAUSE_BETWEEN_REQUESTS = 1.5
 PAUSE_BETWEEN_LANGUAGES = 10
 
-# Загружаем JSON
+# Загрузка JSON
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -29,26 +29,28 @@ def translate_text(text, lang):
         return ""
 
 for lang in LANGUAGES:
-    print(f"\n🌍 Перевод на язык: {lang}\n")
+    print(f"\n🌍 Обработка языка: {lang}\n")
     for entry in data:
         original = entry.get("original", {})
-        translated = {}
+        translations = entry.setdefault("translations", {})
+        current_lang_trans = translations.setdefault(lang, {})
 
         for key, value in original.items():
-            if isinstance(value, str) and value.strip():
+            # Проверяем, нужно ли переводить
+            if (
+                isinstance(value, str) and value.strip()
+                and (key not in current_lang_trans or not current_lang_trans[key].strip())
+            ):
                 print(f"🔤 {entry['slug']} → {key} ({lang})...")
-                translated[key] = translate_text(value, lang)
+                translated_value = translate_text(value, lang)
+                current_lang_trans[key] = translated_value
                 time.sleep(PAUSE_BETWEEN_REQUESTS)
-            else:
-                translated[key] = ""
 
-        entry["translations"][lang] = translated
-
-    print(f"✅ Язык завершён: {lang}")
+    print(f"✅ Завершён язык: {lang}")
     time.sleep(PAUSE_BETWEEN_LANGUAGES)
 
-# Сохраняем результат
+# Сохранение JSON
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-print(f"\n✅ Перевод всех языков завершён. Файл сохранён: {OUTPUT_FILE}")
+print(f"\n✅ Все переводы завершены. Сохранено: {OUTPUT_FILE}")

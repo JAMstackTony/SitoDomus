@@ -197,6 +197,11 @@
 
        /* Стиль для карусели */
     .carousel-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        white-space: nowrap;
         position: relative;
         width: 100%;
         height: 32vh; /* Высота изображений */
@@ -212,27 +217,6 @@
 
     .carousel-image.active {
         display: block; /* Показываем только активное изображение */
-    }
-
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 1.25rem;
-        z-index: 10;
-    }
-
-    .prev {
-        left: 10px;
-    }
-
-    .next {
-        right: 10px;
     }
 
         /* Информация об объекте */

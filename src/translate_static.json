@@ -182,29 +182,42 @@
     "no": "Eiendomssalg"
   },
   "head4": {
-    "cs": "O mně",
-    "en": "About me",
-    "ru": "Обо мне",
-    "de": "Über mich",
-    "lt": "Apie mane",
-    "lv": "Par mani",
-    "pl": "O mnie",
-    "fi": "Minusta",
-    "it": "Su di me",
-    "sl": "O meni",
-    "no": "Om meg"
+    "cs": "O nás",
+    "en": "About Us",
+    "ru": "О нас",
+    "de": "Über uns",
+    "lt": "Apie mus",
+    "lv": "Par mums",
+    "pl": "O nas",
+    "fi": "Meistä",
+    "it": "Chi Siamo",
+    "sl": "O nas",
+    "no": "Om oss"
   },
   "head5": {
+    "cs": "Naší služby",
+    "en": "Our Services",
+    "ru": "Наши службы",
+    "de": "Unsere Dienste",
+    "lt": "Mūsų paslaugos",
+    "lv": "Mūsu pakalpojumi",
+    "pl": "Nasze usługi",
+    "fi": "Palvelumme",
+    "it": "I nostri servizi",
+    "sl": "Naše storitve",
+    "no": "Våre tjenester"
+  },
+  "head6": {
     "cs": "Kontakty",
     "en": "Contacts",
     "ru": "Контакты",
     "de": "Kontakte",
     "lt": "Kontaktai",
     "lv": "Kontakti",
-    "pl": "Kontakt",
+    "pl": "Kontakty",
     "fi": "Yhteystiedot",
     "it": "Contatti",
-    "sl": "Kontakti",
+    "sl": "Storitve",
     "no": "Kontakter"
   },
   "rentbut1": {
@@ -515,6 +528,19 @@
     "sl": "V nasprotju s špekulativnimi trgi Italija ponuja nekaj več — pravi življenjski slog. Tukaj nepremičnine ne kupujete zgolj zaradi številk. Kupite delček atmosfere, tradicije in kakovosti življenja.",
     "no": "I motsetning til spekulative markeder tilbyr Italia noe mer — en ekte livsstil. Her kjøper du ikke eiendom bare for tallene. Du kjøper et stykke atmosfære, tradisjon og livskvalitet."
   },  
+  "serv/h1": {
+    "cs": "Co nabízíme (FAQ)",
+    "en": "What we offer (FAQ)",
+    "ru": "Что мы предлагаем (FAQ)",
+    "de": "Was wir anbieten (FAQ)",
+    "lt": "Ką siūlome (FAQ)",
+    "lv": "To, ko piedāvājam (FAQ)",
+    "pl": "Co oferujemy (FAQ)",
+    "fi": "Mitä tarjoamme (FAQ)",
+    "it": "Cosa offriamo (FAQ)",
+    "sl": "Kaj ponujamo (FAQ)",
+    "no": "Hva vi tilbyr (FAQ)"
+  },
  "pushbut": {
     "cs": "Vybrat nemovitost",
     "en": "Choose a property",

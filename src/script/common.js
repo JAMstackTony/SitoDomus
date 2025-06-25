@@ -75,35 +75,24 @@ document.addEventListener('DOMContentLoaded', function () {
   loadAndApplyTranslations(lang);
 });
 
-// === Слушаем переключение языка ===
-document.getElementById('lang-switcher')?.addEventListener('change', function (e) {
-  const lang = e.target.value;
-  localStorage.setItem('lang', lang);
-  window.currentLang = lang;
-  loadAndApplyTranslations(lang);
+document.addEventListener('DOMContentLoaded', () => {
+  const switcher = document.getElementById('lang-switcher');
+  const currentLang = localStorage.getItem('lang') || 'cs';
 
-  // 👉 добавляем проверку, есть ли функция renderRegionDetail
-  if (typeof renderRegionDetail === 'function') {
-    renderRegionDetail(lang); // ререндерим регион
+  if (switcher) {
+    switcher.value = currentLang;
+
+    switcher.addEventListener('change', () => {
+      const selectedLang = switcher.value;
+      localStorage.setItem('lang', selectedLang);
+      window.currentLang = selectedLang;
+
+      // Применяем переводы
+      loadAndApplyTranslations(selectedLang);
+
+      // Вызываем событие
+      const langEvent = new CustomEvent("languageChanged");
+      window.dispatchEvent(langEvent);
+    });
   }
-
-  // 👉 если есть другие страницы с renderBlogDetail и т.п.
-  if (typeof renderBlogDetail === 'function') {
-    renderBlogDetail(lang);
-  }
-
-  // 👉 если есть другие страницы с renderPage (например блог листинг)
-  if (typeof renderPage === 'function') {
-    renderPage(lang);
-  }
-
-if (typeof renderFaq === 'function') {
-  renderFaq(lang);
-}
-
-if (typeof renderRegions === 'function') {
-  renderRegions(lang);
-}
-
 });
-

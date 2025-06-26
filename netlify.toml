@@ -1,19 +1,8 @@
 [build]
-  command = "npm run build"
+  command = "npx @11ty/eleventy"
   publish = "dist"
-
-[dev]
-  command = "npm start"
-  port = 8888
-  publish = "dist"
-
-[functions]
-  directory = "netlify/functions"
-
-[build.environment]
-  NODE_VERSION = "18"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/admin/*"
+  to = "/admin/index.html"
   status = 200

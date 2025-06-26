@@ -2,30 +2,28 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "../Foto/"
-public_folder: "../Foto/"
+
+media_folder: "src/foto/Galeri"
+public_folder: "/foto/Galeri"
 
 collections:
   - name: "announcements"
     label: "Annunci"
-    folder: "announcements"
+    folder: "src/announcements"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
-      - { label: "RIF", name: "riferimento", widget: "string" }
-      - { label: "RIF", name: "rif", widget: "string" }
-      - { label: "Nome Annuncio", name: "nomeAnunci", widget: "string" }
-      - { label: "Zona", name: "nomeZona", widget: "string" }
-      - { label: "Città", name: "city1", widget: "string" }
-      - { label: "Via", name: "street1", widget: "string" }
-      - { label: "Prezzo", name: "prezzo1", widget: "string" }
-      - { label: "Tipo di Immobile", name: "tipo", widget: "string" }
-      - { label: "Numero Camere", name: "rooms", widget: "string" }
-      - { label: "Bagni", name: "bagni", widget: "string" }
-      - { label: "Superficie", name: "zonam2", widget: "string" }
-      - { label: "Piano", name: "floor", widget: "string" }
-      - { label: "Ascensore", name: "elevator", widget: "string" }
-      - { label: "Terrazzo", name: "terrazzo", widget: "string" }
-      - { label: "Prezzo Finale", name: "prezzo", widget: "string" }
-      - { label: "Descrizione", name: "text", widget: "text" }
-
+      - { label: "Slug",            name: "slug",        widget: "string" }
+      - { label: "Nome Annuncio",   name: "nomeAnunci",  widget: "string" }
+      - { label: "Zona",            name: "nomeZona",    widget: "string" }
+      - { label: "Città",           name: "city1",       widget: "string" }
+      - { label: "Via",             name: "street1",     widget: "string" }
+      - { label: "Prezzo",          name: "prezzo1",     widget: "string" }
+      - { label: "Tipo",            name: "tipo",        widget: "string" }
+      - { label: "Ascensore",       name: "elevator",    widget: "string" }
+      - { label: "Terrazzo",        name: "terrazzo",    widget: "string" }
+      - { label: "Prezzo Finale",   name: "prezzo",      widget: "string" }
+      - { label: "Descrizione",     name: "text",        widget: "text" }
+      - { label: "Testo Esteso",    name: "textInfo",    widget: "text" }

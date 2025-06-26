@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/regions_translated.json');
     eleventyConfig.addPassthroughCopy('src/faq_translated.json');
     eleventyConfig.addPassthroughCopy('src/services_translated.json');
+    eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 
 
         // Фильтр для преобразования пути в slug (чистый URL)

@@ -16,15 +16,25 @@ collections:
     extension: "md"
     format: "frontmatter"
     fields:
-      - { label: "Slug",            name: "slug",        widget: "string" }
-      - { label: "Nome Annuncio",   name: "nomeAnunci",  widget: "string" }
-      - { label: "Zona",            name: "nomeZona",    widget: "string" }
-      - { label: "Città",           name: "city1",       widget: "string" }
-      - { label: "Via",             name: "street1",     widget: "string" }
-      - { label: "Prezzo",          name: "prezzo1",     widget: "string" }
-      - { label: "Tipo",            name: "tipo",        widget: "string" }
-      - { label: "Ascensore",       name: "elevator",    widget: "string" }
-      - { label: "Terrazzo",        name: "terrazzo",    widget: "string" }
-      - { label: "Prezzo Finale",   name: "prezzo",      widget: "string" }
-      - { label: "Descrizione",     name: "text",        widget: "text" }
-      - { label: "Testo Esteso",    name: "textInfo",    widget: "text" }
+      - { label: "rif",             name: "slug",        widget: "string" }
+      - { label: "Название",        name: "nomeAnunci",  widget: "string" }
+      - { label: "Зона",            name: "nomeZona",    widget: "string" }
+      - { label: "Город",           name: "city1",       widget: "string" }
+      - { label: "Улица",           name: "street1",     widget: "string" }
+      - { label: "Цена",            name: "prezzo1",     widget: "string" }
+      - { label: "Тип",             name: "tipo",        widget: "string" }
+      - { label: "Лифт",            name: "elevator",    widget: "string" }
+      - { label: "Терраса",         name: "terrazzo",    widget: "string" }
+      - { label: "Финальная цена",  name: "prezzo",      widget: "string" }
+      - { label: "Введение",        name: "text",        widget: "text" }
+      - { label: "Текст основной",  name: "textInfo",    widget: "text" }
+      - { label: "Текст 1",         name: "textInfo",    widget: "text" }
+      - { label: "Текст 2",         name: "textInfo",    widget: "text" }
+      - { label: "Текст 3",         name: "textInfo",    widget: "text" }
+      - { label: "Текст 4",         name: "textInfo",    widget: "text" }  
+      - { label: "Текст 5",         name: "textInfo",    widget: "text" }          
+      - label: "Immagini"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Immagine", name: "src", widget: "image" }

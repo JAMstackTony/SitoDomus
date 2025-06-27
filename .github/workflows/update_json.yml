@@ -3,7 +3,7 @@ name: Update index2_translated.json from CMS
 on:
   push:
     paths:
-      - 'src/_announcements/*.md'
+      - 'src/announcements/*.md'
 
 jobs:
   update-json:

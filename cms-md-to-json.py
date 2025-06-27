@@ -28,19 +28,15 @@ for filename in os.listdir(md_folder):
         continue  # пропускаем, если уже есть
 
     fields = ["nomeAnunci", "nomeZona", "city1", "street1", "prezzo1", "tipo",
-              "elevator", "terrazzo", "prezzo", "text", "textInfo", "textInfo1",
-              "textInfo2", "textInfo3", "textInfo4", "textInfo5"]
+              "elevator", "terrazzo", "prezzo", "text", "textInfo", "text1",
+              "text2", "text3", "text4", "text5"]
 
     original = {field: post.get(field, "") for field in fields}
 
     # Формируем пути до фото
-    images = []
-    gallery_prefix = "src/foto/Galeri/"
-    for i in range(1, 30):
-        img = f"{slug} ({i}).webp"
-        img_path = gallery_prefix + img
-        if os.path.exists(img_path):
-            images.append({"src": img_path.replace("src/", "")})
+    images = post.get("images", [])
+    if isinstance(images, list):
+        images = [{"src": img["src"]} for img in images]
 
     original["images"] = images
 

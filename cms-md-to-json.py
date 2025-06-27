@@ -4,7 +4,11 @@ import frontmatter
 
 json_path = "src/script/index2_translated.json"
 md_folder = "src/announcements"
-langs = ["en", "ru", "de", "lt", "lv", "pl", "fi", "it", "sl", "no"]
+
+# Проверяем, существует ли директория
+if not os.path.exists(md_folder):
+    print(f"Directory '{md_folder}' does not exist. Skipping...")
+    exit(0)
 
 # Загружаем index2_translated.json
 if os.path.exists(json_path):
@@ -33,14 +37,14 @@ for filename in os.listdir(md_folder):
 
     original = {field: post.get(field, "") for field in fields}
 
-    # Формируем пути до фото
+    # Обрабатываем изображения
     images = post.get("images", [])
     if isinstance(images, list):
         images = [{"src": img["src"]} for img in images]
-
     original["images"] = images
 
     # Тупо пустые переводы по всем языкам
+    langs = ["en", "ru", "de", "lt", "lv", "pl", "fi", "it", "sl", "no"]
     translations = {
         lang: {field: "" for field in fields} | {"images": ""} for lang in langs
     }

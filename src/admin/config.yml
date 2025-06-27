@@ -3,7 +3,6 @@ backend:
   repo: JAMstackTony/SitoDomus
   branch: main
 
-
 media_folder: "src/foto/Galeri"
 public_folder: "/foto/Galeri"
 
@@ -13,8 +12,6 @@ collections:
     folder: "src/announcements"
     create: true
     slug: "{{fields.slug}}"
-    extension: "md"
-    format: "frontmatter"
     fields:
       - { label: "rif",             name: "slug",        widget: "string" }
       - { label: "Название",        name: "nomeAnunci",  widget: "string" }

@@ -28,11 +28,11 @@ collections:
       - { label: "Финальная цена",  name: "prezzo",      widget: "string" }
       - { label: "Введение",        name: "text",        widget: "text" }
       - { label: "Текст основной",  name: "textInfo",    widget: "text" }
-      - { label: "Текст 1",         name: "textInfo",    widget: "text" }
-      - { label: "Текст 2",         name: "textInfo",    widget: "text" }
-      - { label: "Текст 3",         name: "textInfo",    widget: "text" }
-      - { label: "Текст 4",         name: "textInfo",    widget: "text" }  
-      - { label: "Текст 5",         name: "textInfo",    widget: "text" }          
+      - { label: "Текст 1",         name: "text1",       widget: "text" }
+      - { label: "Текст 2",         name: "text2",       widget: "text" }
+      - { label: "Текст 3",         name: "text3",       widget: "text" }
+      - { label: "Текст 4",         name: "text4",       widget: "text" }  
+      - { label: "Текст 5",         name: "text5",       widget: "text" }          
       - label: "Immagini"
         name: "images"
         widget: "list"

@@ -11,7 +11,7 @@
         display: flex;
         justify-content: flex-start; 
         position: relative; 
-        background-image: url(/foto/home55.webp);
+        background-image: url(/foto/home44.webp);
         flex-direction: column;
     }	    
     .hero-left {
@@ -70,10 +70,10 @@
         flex-direction: column;
     }    
     .hero-but1 a {
+        background-color: #012F8D;
         border-radius: 3px;
-        color: #000;
+        color: #FFF;
         padding: 10px 20px;
-        border: 2px solid #012F8D;
         text-decoration: none;
         font-size: 1.625rem;
         transition: background-color 0.3s ease, color 0.3s ease;
@@ -412,7 +412,7 @@
     .hero-section {
         height: 90vh;
         width: 100%;
-        background-image: url(/foto/home55.webp);    
+        background-image: url(/foto/home66.webp);    
     }
 
     .hero-section::before {

@@ -8,7 +8,7 @@ public_folder: "/foto/Galeri"
 
 collections:
   - name: "announcements"
-    label: "Annunci"
+    label: "объявления"
     folder: "src/announcements"
     create: true
     slug: "{{fields.slug}}"
@@ -49,7 +49,7 @@ collections:
       - { label: "H2", name: "h2", widget: "string" }
 
   - name: "rent"
-    label: "Affitti"
+    label: "Аренда"
     folder: "src/rent"
     create: true
     slug: "{{slug}}"
@@ -73,6 +73,31 @@ collections:
       - { label: "Текст 3",         name: "text3",       widget: "text" }
       - { label: "Текст 4",         name: "text4",       widget: "text" }  
       - { label: "Текст 5",         name: "text5",       widget: "text" }          
+      - label: "Immagini"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Immagine", name: "src", widget: "image" }
+
+  - name: "regions"
+    label: "Regioni"
+    folder: "src/regions"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "h1", name: "h1", widget: "string" }
+      - { label: "h2", name: "h2", widget: "text" }
+      - { label: "h3", name: "h3", widget: "text" }
+      - { label: "textL1", name: "textL1", widget: "text" }
+      - { label: "textL2", name: "textL2", widget: "text" }
+      - { label: "textR1", name: "textR1", widget: "text" }
+      - { label: "textR2", name: "textR2", widget: "text" }
+      - { label: "dawn1", name: "dawn1", widget: "text" }
+      - { label: "dawn2", name: "dawn2", widget: "text" }
       - label: "Immagini"
         name: "images"
         widget: "list"

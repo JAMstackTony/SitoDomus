@@ -1,12 +1,16 @@
-name: Update index2_translated.json and faq_translated.json from CMS
+name: Update all translated JSONs from CMS
 
 on:
   push:
     paths:
       - 'src/announcements/*.md'
       - 'src/faq/*.md'
+      - 'src/rent/*.md'
+      - 'src/regions/*.md'
       - 'cms-md-to-json.py'
       - 'cms-faq-to-json.py'
+      - 'cms-rent-to-json.py'
+      - 'cms-md-to-json-regions.py'
 
 jobs:
   update-json:
@@ -34,6 +38,12 @@ jobs:
       - name: Run FAQ script
         run: python cms-faq-to-json.py
 
+      - name: Run RENT script
+        run: python cms-rent-to-json.py
+
+      - name: Run REGIONS script
+        run: python cms-md-to-json-regions.py
+
       - name: Commit and push
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
@@ -43,5 +53,7 @@ jobs:
           git pull origin main --rebase || echo "Nothing to pull"
           git add src/script/index2_translated.json
           git add src/script/faq_translated.json
+          git add src/script/rent_translated.json
+          git add src/script/regions_translated.json
           git commit -m "🔁 auto: update translated JSONs from CMS" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/JAMstackTony/SitoDomus.git main

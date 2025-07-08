@@ -47,3 +47,34 @@ collections:
       - { label: "ID", name: "id", widget: "string" }
       - { label: "H1", name: "h1", widget: "string" }
       - { label: "H2", name: "h2", widget: "string" }
+
+  - name: "rent"
+    label: "Affitti"
+    folder: "src/rent"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "rif",             name: "slug",        widget: "string" }
+      - { label: "Название",        name: "nomeAnunci",  widget: "string" }
+      - { label: "Зона",            name: "nomeZona",    widget: "string" }
+      - { label: "Город",           name: "city1",       widget: "string" }
+      - { label: "Улица",           name: "street1",     widget: "string" }
+      - { label: "Цена",            name: "prezzo1",     widget: "string" }
+      - { label: "Тип",             name: "tipo",        widget: "string" }
+      - { label: "Лифт",            name: "elevator",    widget: "string" }
+      - { label: "Терраса",         name: "terrazzo",    widget: "string" }
+      - { label: "Финальная цена",  name: "prezzo",      widget: "string" }
+      - { label: "Введение",        name: "text",        widget: "text" }
+      - { label: "Текст основной",  name: "textInfo",    widget: "text" }
+      - { label: "Текст 1",         name: "text1",       widget: "text" }
+      - { label: "Текст 2",         name: "text2",       widget: "text" }
+      - { label: "Текст 3",         name: "text3",       widget: "text" }
+      - { label: "Текст 4",         name: "text4",       widget: "text" }  
+      - { label: "Текст 5",         name: "text5",       widget: "text" }          
+      - label: "Immagini"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Immagine", name: "src", widget: "image" }

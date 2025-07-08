@@ -35,3 +35,15 @@ collections:
         widget: "list"
         fields:
           - { label: "Immagine", name: "src", widget: "image" }
+
+  - name: "faq"
+    label: "FAQ"
+    folder: "src/faq"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "H1", name: "h1", widget: "string" }
+      - { label: "H2", name: "h2", widget: "string" }

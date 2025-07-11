@@ -6,69 +6,42 @@
     .hero-section {
         background-position: center;
         background-size: cover;
-        height: 115vh;
         background-repeat: no-repeat;
-        display: flex;
-        justify-content: flex-start; 
-        position: relative; 
         background-image: url(/foto/home44.webp);
+        height: 115vh;
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;      /* по центру по горизонтали */
+        justify-content: center;  /* по центру по вертикали */
+        position: relative;
     }	    
-    .hero-left {
-        margin-top: 12vh;
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-start; 
-        transition: opacity 0.5s ease;
-        height: fit-content;
-    }
-    .hero-info {  
+    .hero-info {
+        text-align: center;
         display: flex;
         flex-direction: column;
-        margin-left: 11.2vh;
-        text-align: left;
-    }   
+        gap: 20px;
+    }  
     .hero-info h1 {
-        color: #565656;
-        font-size: 5rem;
-    }     
+        color: #FFF;
+        font-size: 6rem;
+        font-family: 'Bebas Neue', sans-serif !important;
+        font-weight: 100;
+        letter-spacing: 1.9px;
+    }    
+    .hero-info h2 { 
+        color: #FFF;
+    }
     .hero-info a {
         color: #0097B2;
     }     
-    .hero-h3 {
-        margin-top: 40px;
-    }   
-    .hero-h3 a {
-        text-decoration: none;
-        color: #000;
-    }   
-    .hero-h3 h3 {
-        position: relative; /* Для позиционирования квадратика */
-        padding-left: 20px; /* Отступ для текста после квадратика */
-        margin-bottom: 10px; /* Расстояние между строками */
-    }
-    .hero-h3 h3::before {
-        content: ""; /* Создаем квадратик */
-        display: block;
-        width: 10px; /* Размер квадратика */
-        height: 10px; /* Размер квадратика */
-        background-color: #0097B2; /* Цвет квадратика (черный) */
-        position: absolute;
-        left: 0; /* Квадратик у левого края */
-        top: 50%; /* Выравнивание по центру строки */
-        transform: translateY(-50%); /* Корректировка позиции */
-    }   
-    .highlight { 
-        color: #0097B2;
-    }
     .hero-but {
-        margin-left: 11.2vh;
-        margin-top: 12vh;
-        text-align: left;
-        gap: 40px;
+        margin-top: 100px;
+        text-align: center;
         display: flex;
         flex-direction: column;
-    }    
+        gap: 20px;
+    }   
     .hero-but1 a {
         background-color: #012F8D;
         border-radius: 3px;
@@ -76,25 +49,12 @@
         padding: 10px 20px;
         text-decoration: none;
         font-size: 1.625rem;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background-color 0.3s ease;
     }   
     .hero-but1 a:hover {
         border: 2px solid #416ECB;
         background-color: #416ECB;
-        color: #FFF;
-    }   
-    .hero-but2 a {
-        border-radius: 3px;
-        color: #FFF;
-        padding: 12px 22px;
-        background-color: #012F8D;
-        text-decoration: none;
-        font-size: 1.625rem;
-        transition: background-color 0.3s ease;
-    }    
-    .hero-but2 a:hover {
-        background-color: #416ECB;
-    }          
+    }           
     .section1 {
         position: relative;
         height: 80vh;
@@ -428,23 +388,27 @@
 
     .hero-left {
         z-index: 3;
-        margin: 6vh;
         display: flex;
         flex-direction: column; 
         align-items: center; 
         transition: opacity 0.5s ease;
+        width: 100%;
     }
     .hero-info {  
         margin-left: 0 !important;
         justify-content: center;
-        width: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         text-align: center;
+        z-index: 9999;
     }   
     .hero-info h1 {
+        font-family: 'Bebas Neue', sans-serif !important;
+        font-weight: 100;
         color: #FFF;
-        font-size: 2.5rem;
+        font-size: 2.75rem;
+        letter-spacing: 1.5px;
     }     
     .hero-info h2 {
         margin-top: 3.2vh;
@@ -479,14 +443,11 @@
         gap: 40px;
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 80%;
     }    
     .but1_mob {      
         display: flex;  
-    }  
-    .but1_des {      
-        display: none;  
-    }   
+    }    
     .hero-but1 {
         width: 100%;
     }   
@@ -501,7 +462,7 @@
         border: 2px solid #012F8D;
         text-decoration: none;
         font-size: 1.5rem;
-        font-weight: 200;
+        font-weight: 100;
         transition: background-color 0.3s ease, color 0.3s ease;
     }   
     .hero-but1 a:hover {

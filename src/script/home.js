@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <!-- Цена -->
                     <div class="price">
                         <a class="euro" href="/anunci/dynamic/?rif=${announcement.slug}">${translated.prezzo} €</a>
-                        <a class="rif" href="/anunci/dynamic/?rif=${announcement.slug}">RIF ${announcement.slug}</a>
+                        <a class="rif" href="/anunci/dynamic/?rif=${announcement.slug}">${announcement.slug}</a>
                     </div>
 
                     <!-- Детали -->

@@ -84,8 +84,8 @@ const toRender = filtered.slice(0, displayedCount + batchSize);
       </div>
       <div class="info-cont">
         <div class="price">
-          <a class="euro" href="/anunci/dynamic/?rif=${item.slug}">${t.prezzo}</a>
-          <a class="rif" href="/anunci/dynamic/?rif=${item.slug}">RIF ${item.slug}</a>
+          <a class="euro" href="/anunci/dynamic/?rif=${item.slug}">${t.prezzo} Eur</a>
+          <a class="rif" href="/anunci/dynamic/?rif=${item.slug}">${item.slug}</a>
         </div>
         <div class="nome-anunci">${t.nomeAnunci}</div>
         <a class="info-block1" href="/anunci/dynamic/?rif=${item.slug}">
